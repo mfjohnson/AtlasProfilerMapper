@@ -1,0 +1,22 @@
+{
+    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
+    "id": {
+      "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
+      "id": "-1234",
+      "version": 0,
+      "typeName": "hive_column",
+      "state": "ACTIVE"
+    },
+    "typeName": "hive_column",
+    "values": {
+      "stats:maxValue": "85",
+      "stats:minValue": "1",
+      "stats:avgLength": "10",
+      "stats:maxLength": "20",
+      "stats:distinctCount": "20"
+    },
+    "traitNames": [
+    ],
+    "traits": {
+    }
+}
