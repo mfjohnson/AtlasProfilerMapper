@@ -35,7 +35,7 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": false,
+            "isIndexable": true,
             "reverseAttributeName": "columns"
           },
            {
@@ -44,7 +44,7 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
             "reverseAttributeName": null
           },
           {
@@ -53,7 +53,16 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
+            "reverseAttributeName": null
+          },
+         {
+            "name": "stats:sumValue",
+            "dataTypeName": "string",
+            "multiplicity": "optional",
+            "isComposite": false,
+            "isUnique": false,
+            "isIndexable": false,
             "reverseAttributeName": null
           },
           {
@@ -62,7 +71,7 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
             "reverseAttributeName": null
           },
           {
@@ -71,7 +80,25 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
+            "reverseAttributeName": null
+          },
+         {
+            "name": "stats:minLength",
+            "dataTypeName": "string",
+            "multiplicity": "optional",
+            "isComposite": false,
+            "isUnique": false,
+            "isIndexable": false,
+            "reverseAttributeName": null
+          },
+        {
+            "name": "stats:empties",
+            "dataTypeName": "string",
+            "multiplicity": "optional",
+            "isComposite": false,
+            "isUnique": false,
+            "isIndexable": false,
             "reverseAttributeName": null
           },
           {
@@ -80,7 +107,7 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
             "reverseAttributeName": null
           },
           {
@@ -89,7 +116,16 @@
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
-            "isIndexable": true,
+            "isIndexable": false,
+            "reverseAttributeName": null
+          },
+          {
+            "name": "stats:countFrequency",
+            "dataTypeName": "string",
+            "multiplicity": "optional",
+            "isComposite": false,
+            "isUnique": false,
+            "isIndexable": false,
             "reverseAttributeName": null
           }
         ]

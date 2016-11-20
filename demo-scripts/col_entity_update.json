@@ -1,4 +1,4 @@
-{
+    {
     "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
     "id": {
       "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
