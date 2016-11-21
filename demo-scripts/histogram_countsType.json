@@ -1,0 +1,35 @@
+{
+  "enumTypes": [],
+  "structTypes": [],
+  "traitTypes": [],
+  "classTypes": [
+    {
+      "superTypes": [
+        "Asset"
+      ],
+      "hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.ClassType",
+      "typeName": "histogram_counts",
+      "typeDescription": "To be used as part of an array where each element contains a key and a value.",
+      "attributeDefinitions": [
+        {
+          "name": "key",
+          "dataTypeName": "string",
+          "multiplicity": "required",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": true,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "value",
+          "dataTypeName": "int",
+          "multiplicity": "required",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        }
+      ]
+    }
+  ]
+}

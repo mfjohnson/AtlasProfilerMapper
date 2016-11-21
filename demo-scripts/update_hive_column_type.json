@@ -1,134 +1,161 @@
 {
-    "enumTypes": [],
-    "structTypes": [],
-    "traitTypes": [],
-    "classTypes": [
-      {
-        "superTypes": [
-          "DataSet"
-        ],
-        "hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.ClassType",
-        "typeName": "hive_column",
-        "typeDescription": null,
-        "attributeDefinitions": [
-          {
-            "name": "type",
-            "dataTypeName": "string",
-            "multiplicity": "required",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": true,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "comment",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "table",
-            "dataTypeName": "hive_table",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": true,
-            "reverseAttributeName": "columns"
-          },
-           {
-            "name": "stats:minValue",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:meanValue",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-         {
-            "name": "stats:sumValue",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:maxValue",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:avgLength",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-         {
-            "name": "stats:minLength",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
+  "enumTypes": [],
+  "structTypes": [],
+  "traitTypes": [],
+  "classTypes": [
+    {
+      "superTypes": [
+        "DataSet"
+      ],
+      "hierarchicalMetaTypeName": "org.apache.atlas.typesystem.types.ClassType",
+      "typeName": "hive_column",
+      "typeDescription": null,
+      "attributeDefinitions": [
         {
-            "name": "stats:empties",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:maxLength",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:distinctCount",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          },
-          {
-            "name": "stats:countFrequency",
-            "dataTypeName": "string",
-            "multiplicity": "optional",
-            "isComposite": false,
-            "isUnique": false,
-            "isIndexable": false,
-            "reverseAttributeName": null
-          }
-        ]
-      }
-    ]
+          "name": "type",
+          "dataTypeName": "string",
+          "multiplicity": "required",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": true,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "comment",
+          "dataTypeName": "string",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "table",
+          "dataTypeName": "hive_table",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": "columns"
+        },
+        {
+          "name": "stats:minValue",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:meanValue",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:sumValue",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:maxValue",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:avgLength",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:minLength",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:nulls",
+          "dataTypeName": "int",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:numRows",
+          "dataTypeName": "int",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:empties",
+          "dataTypeName": "int",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:maxLength",
+          "dataTypeName": "float",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:distinctCount",
+          "dataTypeName": "int",
+          "multiplicity": "optional",
+          "isComposite": false,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+        {
+          "name": "stats:countFrequency",
+          "dataTypeName": "array<histogram_counts>",
+          "multiplicity": "optional",
+          "isComposite": true,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        },
+       {
+          "name": "stats:decilFreq",
+          "dataTypeName": "array<histogram_counts>",
+          "multiplicity": "optional",
+          "isComposite": true,
+          "isUnique": false,
+          "isIndexable": false,
+          "reverseAttributeName": null
+        }
+      ]
+    }
+  ]
 }
