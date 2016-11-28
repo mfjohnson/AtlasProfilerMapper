@@ -138,8 +138,8 @@
           "reverseAttributeName": null
         },
         {
-          "name": "stats:countFrequency",
-          "dataTypeName": "array<histogram_counts>",
+          "name": "stats:countFreq",
+          "dataTypeName": "string",
           "multiplicity": "optional",
           "isComposite": true,
           "isUnique": false,
@@ -147,8 +147,8 @@
           "reverseAttributeName": null
         },
        {
-          "name": "stats:decilFreq",
-          "dataTypeName": "array<histogram_counts>",
+          "name": "stats:decileFreq",
+          "dataTypeName": "string",
           "multiplicity": "optional",
           "isComposite": true,
           "isUnique": false,

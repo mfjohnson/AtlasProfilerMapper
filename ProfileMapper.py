@@ -25,8 +25,8 @@ colStats = df.pivot(index='qualifiedName', columns='profileKind', values='value'
 tableId = "-1234"
 print(colStats)
 
-numRows = str(0)
-tableFQDN = "profile.profilesample@HDP"
+numRows = 0
+tableFQDN = "default.customer_info1@HDP"
 table_properties = {
     "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
     "id": {
@@ -53,8 +53,8 @@ columnProfile = []
 for index,colDef in colStats.iterrows():
     colId = "-1234"
     colFQDN = index
-#    decileFreq = json.loads(colDef['decilefreq'])
-#    countFreq = json.loads(colDef['countfreq'])
+    decileFreq = colDef['decilefreq']
+    countFreq = colDef['countfreq']
     column_properties =  {
         "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
         "id": {
@@ -76,7 +76,9 @@ for index,colDef in colStats.iterrows():
           "stats:distinctCount": colDef['distincts'],
           "stats:empties": colDef['empties'],
           "stats:nulls": colDef['nulls'],
-          "stats:numRows":colDef['numrows']
+          "stats:numRows":colDef['numrows'],
+          "stats:decileFreq": colDef['decilefreq'],
+          "stats:countFreq": colDef['countfreq']
         },
         "traitNames": [
         ],
@@ -93,3 +95,7 @@ for index,colDef in colStats.iterrows():
 with open('result.json', 'w') as fp:
     json.dump(columnProfile, fp)
 
+hive_table_def=atlasGET("/api/atlas/types/hive_column")
+print json.dumps(hive_table_def, indent=4, sort_keys=True)
+hive_tables=atlasGET("/api/atlas/entities?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN))
+print json.dumps(hive_tables, indent=4, sort_keys=True)

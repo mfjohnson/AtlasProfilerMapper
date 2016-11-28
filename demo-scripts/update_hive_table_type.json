@@ -139,7 +139,7 @@
           },
           {
             "name": "stats:numRows",
-            "dataTypeName": "string",
+            "dataTypeName": "int",
             "multiplicity": "optional",
             "isComposite": false,
             "isUnique": false,
