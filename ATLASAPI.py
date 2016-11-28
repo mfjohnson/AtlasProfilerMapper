@@ -20,3 +20,8 @@ def atlasPOST( restAPI, data) :
     return (json.loads(r.text));
 
 
+def atlasPUT( restAPI, data) :
+    # TODO update to support Atlas kerberos based authentication
+    url = "http://" + ATLAS_DOMAIN + ":" + ATLAS_PORT + restAPI
+    r = requests.put(url, auth=("admin", "admin"),json=data)
+    return (json.loads(r.text));
