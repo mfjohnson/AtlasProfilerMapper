@@ -2,6 +2,13 @@
 
 # Setting up Atlas Types
 
+There are two types which get updated to support the Atlas Data Profiler possible:
+
+| Atlas Modified type | Description | Update Defining file |
+|---------------------|-----------------------------------------|--------------------------|
+| hive_table          | Adds table total table rows.  Note: this value comes from the first field in the tables specified numrow | |
+| hive_column         | Adds the column statistics for display on the UI field detail views |  |
+
 # Mapping Profiler Generator profileKind to AtlasType stats
 
 ## Numeric Specific Stat types
@@ -13,7 +20,7 @@ For non-numeric values a null will be entered into these fields
 | The minimum value found for the data value | min | stats:minValue |
 | The mean of all data values for column | mean | stats:meanValue |
 | The total of all values | sum | stats:sumValue |
-| A set containing decile frequency TODO-Need to fix the atlas type to properly include this information | decilefreq | stats:decileFreq
+| A set containing decile frequency | decilefreq | stats:decileFreq
 
 ## String Specific stat types
 for non-string values a null will be entered into these fields
@@ -35,17 +42,13 @@ These stats will be populated for all datatypes
 
 | Stat Description | profileKind | Atlas Stat type Name |
 |------------------|-------------|----------------------|
-|  | distinct | stats:distinctCount |
-|  | empties  | stats:empties |
-|  | nulls    | stats:nulls|
-|  | numrows  | stats:numRows|
+| The column cardinality count | distinct | stats:distinctCount |
+| The total number of empty fields (null or blank string) | empties  | stats:empties |
+| The total number of null values | nulls    | stats:nulls|
+| While this value is also used to populate the table rowcount, the UI views also are supposed to show the numrows, so this value is also included at the column level | numrows  | stats:numRows|
 
 
 
 
 
-      "stats:maxValue": "85",
-      "stats:minValue": "1",
-      "stats:avgLength": "10",
-      "stats:maxLength": "20",
-      "stats:distinctCount": "20"
+ 
