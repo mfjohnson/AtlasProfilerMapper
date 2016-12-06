@@ -1,0 +1,88 @@
+{
+    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
+    "id": {
+      "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
+      "id": "-1234",
+      "typeName": "hive_column"
+    },
+    "typeName": "hive_column",
+    "values": {
+      "profileData": {
+		"jsonClass":"org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+		"typeName":"hive_column_profile_data",
+		"values":{
+	      "nonNullData":100,
+	      "distributionAnnual": [
+            {
+		      "jsonClass":"org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+		      "typeName":"annual_frequency_data",
+		      "values":{
+                "year": 2010,
+                "count": 780,
+				"monthlyCounts": {
+				  "1": 10,
+				  "2": 20,
+				  "3": 30,
+				  "4": 40,
+				  "5": 50,
+				  "6": 60,
+				  "7": 70,
+				  "8": 80,
+				  "9": 90,
+				  "10": 100,
+				  "11": 110,
+				  "12": 120
+				}
+              }
+            },
+            {
+		      "jsonClass":"org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+		      "typeName":"annual_frequency_data",
+		      "values":{
+                "year": 2011,
+                "count": 780,
+				"monthlyCounts": {
+				  "1": 120,
+				  "2": 110,
+				  "3": 100,
+				  "4": 90,
+				  "5": 80,
+				  "6": 70,
+				  "7": 60,
+				  "8": 50,
+				  "9": 40,
+				  "10": 30,
+				  "11": 20,
+				  "12": 10
+				}
+              }
+            },
+            {
+		      "jsonClass":"org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+		      "typeName":"annual_frequency_data",
+		      "values":{
+                "year": 2012,
+                "count": 900,
+				"monthlyCounts": {
+				  "1": 130,
+				  "2": 30,
+				  "3": 110,
+				  "4": 50,
+				  "5": 90,
+				  "6": 70,
+				  "7": 80,
+				  "8": 60,
+				  "9": 100,
+				  "10": 40,
+				  "11": 120,
+				  "12": 20
+				}
+              }
+            }
+		  ]
+	    }
+	  }
+	},
+	"traits": {
+	}
+}
