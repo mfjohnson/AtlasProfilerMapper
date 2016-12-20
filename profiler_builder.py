@@ -41,7 +41,6 @@ def extractArguments():
 def prepareProfileVariables(df):
     # ------- Calculate new columns of data and pivot table
     df['qualifiedName'] = df['database'] + "." + df['table'] + "." + df['field'] + "@" + clustername
-    # colStats = pd.pivot_table(df, index=["qualifiedName"],columns=["profileKind"],values=["value"], aggfunc=[np.sum])
     colStats = df.pivot(index='qualifiedName', columns='profileKind', values='value')
     return colStats;
 
@@ -112,22 +111,28 @@ def buildValueFreqData(s):
 def buildAnnualFrequencyData(annual, monthly):
     distrAnnualList = []
     if monthly:
-        annualFreqJSON = json.loads(monthly)
-        df = pd.read_json(monthly)
-        print(df)
-        monthSum = df.groupby('year','month').sum()
-        print(monthSum)
+        monthlyList = pd.DataFrame(json.loads(monthly))
+        if annual:
+            annualFreqJSON = json.loads(annual)
 
-        for y in annualFreqJSON:
-            year = {
-                "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
-                "typeName": "annual_frequency_data",
-                "values": {
-                    "year": y['year'],
-                    "count": y['count']
+            for y in annualFreqJSON:
+                dataYear = y['year']
+                currentYearMonths = monthlyList[monthlyList.year==dataYear]
+                monthlyCounts = []
+                for index, m in currentYearMonths.iterrows():
+                    monthValue = {str(m['month']):m['count']}
+                    monthlyCounts.append(monthValue);
+
+                year = {
+                    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+                    "typeName": "annual_frequency_data",
+                    "values": {
+                        "year": dataYear,
+                        "count": y['count'],
+                        "monthlyCounts" : monthlyCounts
+                    }
                 }
-            }
-            distrAnnualList.append(year)
+                distrAnnualList.append(year)
 
     return(distrAnnualList);
 

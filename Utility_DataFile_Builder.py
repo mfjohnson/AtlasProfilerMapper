@@ -28,7 +28,7 @@ def random_date(start, end):
 
 
 def buildCustomerRDD(i) :
-    d1 = datetime.date(2008,1,1)
+    d1 = datetime.date(randrange(2008,2016,1),randrange(1,12,1),1)
     d2 = datetime.date(2016,12,31)
 
 
@@ -38,16 +38,15 @@ def buildCustomerRDD(i) :
 
 #---------------- Begin Main Processing
 a = sc.parallelize(range(1,100))
-colNames = ["group","CustomerId","CompanyName","Name","EMAIL","Address","CustomerSince","AnnualSales","LastOrderDate"]
+colNames = ["transgroup","CustomerId","CompanyName","contactname","EMAIL","Address","CustomerSince","AnnualSales","LastOrderDate"]
 rows = a.map(lambda i: buildCustomerRDD(i) )
 b = hc.inferSchema(rows)
 b = reduce(lambda b, idx: b.withColumnRenamed(b.schema.names[idx],colNames[idx]),xrange(len(b.schema.names)), b)
 
 
-#hc.sql("CREATE TABLE CUSTOMER_INFO (group int,customerId STRING, CompanyName String,contactName String, EMAIL string,Address string,CustomerSince INT, AnnualSales FLOAT,LastOrderDate DATE")
 b.printSchema()
 b.show()
 
-#b.write.format("orc").mode("overwrite").saveAsTable("CustomerInfo")
+b.write.format("orc").mode("overwrite").saveAsTable("CustomerInfo")
 #z = b.write.saveAsTable("CustomerInfo")
 #print z
