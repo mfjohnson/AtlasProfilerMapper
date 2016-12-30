@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from ATLASAPI import *
 import sys, getopt
+import operator
 
 # TODO Document the methods
 #------ SPECIFY DEFAULT PROPERTIES
@@ -41,7 +42,9 @@ def extractArguments():
 def prepareProfileVariables(df):
     # ------- Calculate new columns of data and pivot table
     df['qualifiedName'] = df['database'] + "." + df['table'] + "." + df['field'] + "@" + clustername
-    colStats = df.pivot(index='qualifiedName', columns='profileKind', values='value')
+    a = df[['qualifiedName','dataType','profileKind','value']]
+#    colStats = a.pivot(index='qualifiedName', columns='profileKind', values='value')
+    colStats = pd.pivot_table(a, values='value', index=['qualifiedName','dataType'], columns=['profileKind'],aggfunc=np.sum)
     return colStats;
 
 
@@ -96,12 +99,7 @@ def buildValueFreqData(s):
 
         for d in decileJSON:
             value = {
-                "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
-                "typeName": "value_frequency_data",
-                "values": {
-                    "value":d['key'],
-                    "count":d['value']
-                }
+                d['key']:d['value']
             }
             decileList.append(value)
 
@@ -109,6 +107,7 @@ def buildValueFreqData(s):
 
 # TODO Finish implementing the Annual frequency
 def buildAnnualFrequencyData(annual, monthly):
+    print("Builder")
     distrAnnualList = []
     if monthly:
         monthlyList = pd.DataFrame(json.loads(monthly))
@@ -117,25 +116,42 @@ def buildAnnualFrequencyData(annual, monthly):
 
             for y in annualFreqJSON:
                 dataYear = y['year']
-                currentYearMonths = monthlyList[monthlyList.year==dataYear]
-                monthlyCounts = []
-                for index, m in currentYearMonths.iterrows():
-                    monthValue = {str(m['month']):m['count']}
-                    monthlyCounts.append(monthValue);
-
-                year = {
-                    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
-                    "typeName": "annual_frequency_data",
-                    "values": {
-                        "year": dataYear,
-                        "count": y['count'],
-                        "monthlyCounts" : monthlyCounts
-                    }
+                data = {
+                    "{0}:count".format(dataYear):y['count']
                 }
-                distrAnnualList.append(year)
+                distrAnnualList.append(data)
+                currentYearMonths = monthlyList[monthlyList.year==dataYear]
+                for index, m in currentYearMonths.iterrows():
+                    monthValue = {"{0}:{1}".format(dataYear,m['month']):m['count']}
+                    distrAnnualList.append(monthValue);
+
+
 
     return(distrAnnualList);
 
+def getFreqListKey(item):
+    return item[0]
+
+def sortFrequencyKeys(freq):
+    sorted_x = freq.sort(key=lambda x: x.get(1), reverse=True)
+#    sorted_x = sorted(freq, key=operator.itemgetter(0))
+    return(sorted_x)
+
+def mapDistributionObjects(colDef, dataType):
+    keyOrder = None
+
+    if (dataType=='string'):
+        distType="count-frequency"
+        distData= buildValueFreqData(colDef['countfreq'])
+        keyOrder = sortFrequencyKeys(distData);
+    elif (dataType=='date'):
+        distType = "annual"
+        distData = buildAnnualFrequencyData(colDef['annual'], colDef['monthly']);
+    else:  # Assuming if not string nor date it must be numeric
+        distType = "decile-frequency"
+        distData = buildValueFreqData(colDef['decilefreq'])
+
+    return(distType, distData,keyOrder);
 
 
 def prepareColumnProfileStats(colStats, outputfile):
@@ -148,10 +164,10 @@ def prepareColumnProfileStats(colStats, outputfile):
     columnProfile = []
     for index, colDef in colStats.iterrows():
         colId = "-1234"
-        colFQDN = index
-        colDecileFreq = buildValueFreqData(colDef['decilefreq'])
-        countFreq = buildValueFreqData(colDef['countfreq'])
-        distrAnnual = buildAnnualFrequencyData(colDef['annual'], colDef['monthly'])
+        colFQDN = index[0]
+
+        (distributionType, distributionData,distributionKeyOrder) = mapDistributionObjects(colDef, index[1])
+
         column_properties = {
             "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
             "id": {
@@ -175,9 +191,9 @@ def prepareColumnProfileStats(colStats, outputfile):
                 "nonNullData": (colDef['numrows'] - colDef['nulls']),
                 "medianValue": None,
                 "numRows": colDef['numrows'],
-                "distributionDecile": colDecileFreq,
-                "distributionCount": countFreq,
-                "distributionAnnual": distrAnnual,
+                "distributionType": distributionType,
+                "distributionData": distributionData,
+                "distributionKeyOrder" : distributionKeyOrder,
                 "minDate" : None,
                 "maxDate" : None
             },
