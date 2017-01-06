@@ -31,7 +31,7 @@ def extractArguments():
         if o == '-i':
             inputfile = open(a)
         elif o == '-o':
-            outputfile = open(a)
+            outputfile = a
         else:
             print("Usage: %s -i input -o output" % sys.argv[0])
 
@@ -41,7 +41,7 @@ def extractArguments():
 
 def prepareProfileVariables(df):
     # ------- Calculate new columns of data and pivot table
-    df['qualifiedName'] = df['database'] + "." + df['table'] + "." + df['field'] + "@" + clustername
+    df['qualifiedName'] = df['database'] + "." + df['table'].str.lower() + "." + df['field'].str.lower() + "@" + clustername
     a = df[['qualifiedName','dataType','profileKind','value']]
 #    colStats = a.pivot(index='qualifiedName', columns='profileKind', values='value')
     colStats = pd.pivot_table(a, values='value', index=['qualifiedName','dataType'], columns=['profileKind'],aggfunc=np.sum)
@@ -62,6 +62,7 @@ def prepareTableProfileStats(stats,outputfile):
     print(stats)
     numRows = 0
     tableFQDN = "default.customer_info1@HDP"
+    tableResult = None
     table_properties = {
         "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
         "id": {
@@ -86,9 +87,10 @@ def prepareTableProfileStats(stats,outputfile):
         tableResult = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN),
             table_properties)
+#        print(json.dumps(tableResult,indent=2, sort_keys=True))
     else:
-        json.dump(table_properties, outputfile)
-        tableResult = None
+        with open("resultTable.json", 'w') as fp:
+            json.dump(table_properties, fp)
 
     return(tableResult);
 
@@ -193,9 +195,7 @@ def prepareColumnProfileStats(colStats, outputfile):
                 "numRows": colDef['numrows'],
                 "distributionType": distributionType,
                 "distributionData": distributionData,
-                "distributionKeyOrder" : distributionKeyOrder,
-                "minDate" : None,
-                "maxDate" : None
+                "distributionKeyOrder" : distributionKeyOrder
             },
             "traitNames": [
             ],
@@ -203,13 +203,14 @@ def prepareColumnProfileStats(colStats, outputfile):
             }
         }
         print json.dumps(column_properties, indent=4, sort_keys=True)
-        atlasPOST(
+        result = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_column&property=qualifiedName&value=%s" % (colFQDN),
             column_properties)
+        print json.dumps(result, indent=2, sort_keys=True)
         columnProfile.append(column_properties)
-    if outputfile:
-        with open('result.json', 'w') as fp:
-            json.dump(columnProfile, fp)
+        if outputfile:
+            with open("{0}Column.json".format(colFQDN), 'w') as fp:
+                json.dump(columnProfile, fp)
     return;
 
 
