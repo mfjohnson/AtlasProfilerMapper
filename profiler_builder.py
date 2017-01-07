@@ -60,7 +60,7 @@ def prepareTableProfileStats(stats,outputfile):
     global tableFQDN, table_properties
     tableId = "-1234"
     print(stats)
-    numRows = 5000
+    numRows = stats['numrows'].iloc[0]
     tableFQDN = "default.customer_info1@HDP"
     tableResult = None
     table_properties = {
@@ -201,7 +201,7 @@ def prepareColumnProfileStats(colStats, outputfile):
                         "maxLength": convertNumDictValue(colDef['max_length'],"Num"),
                         "cardinality": convertNumDictValue(colDef['distincts'],"Num"),
  #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
-                        "nonNullData": convertNumDictValue((colDef['numrows'] - colDef['nulls']),"Num"),
+                        "nonNullData": convertNumDictValue((1-(colDef['nulls'])/colDef['numrows'])*100,"Num"),
                         "distributionType": distributionType,
                         "distributionData": distributionData
                     }
