@@ -1,6 +1,7 @@
 import requests
 import json
 import sys
+from requests.auth import HTTPDigestAuth
 
 
 ATLAS_DOMAIN="server1"

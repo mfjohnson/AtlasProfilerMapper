@@ -1,0 +1,19 @@
+{
+  "id": {
+    "id": "-1234",
+    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
+    "typeName": "hive_table"
+  },
+  "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
+  "traits": {},
+  "typeName": "hive_table",
+  "values": {
+    "profileData": {
+      "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+      "typeName": "hive_table_profile_data",
+      "values": {
+        "rowCount": 5000
+      }
+    }
+  }
+}

@@ -60,7 +60,7 @@ def prepareTableProfileStats(stats,outputfile):
     global tableFQDN, table_properties
     tableId = "-1234"
     print(stats)
-    numRows = 0
+    numRows = 5000
     tableFQDN = "default.customer_info1@HDP"
     tableResult = None
     table_properties = {
@@ -87,10 +87,6 @@ def prepareTableProfileStats(stats,outputfile):
         tableResult = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN),
             table_properties)
-#        print(json.dumps(tableResult,indent=2, sort_keys=True))
-    else:
-        with open("resultTable.json", 'w') as fp:
-            json.dump(table_properties, fp)
 
     return(tableResult);
 
@@ -104,8 +100,18 @@ def buildValueFreqData(s):
                 d['key']:d['value']
             }
             decileList.append(value)
+    resultStr = convertJSONSet(decileList)
+    return resultStr;
 
-    return decileList;
+
+def convertJSONSet(jsonObject):
+    strJSONList = json.dumps(jsonObject)
+    strJSONList = strJSONList.replace("{", "")
+    strJSONList = strJSONList.replace("}", "")
+    strJSONList = strJSONList.replace("[", "{")
+    strJSONList = strJSONList.replace("]", "}")
+    return(strJSONList)
+
 
 # TODO Finish implementing the Annual frequency
 def buildAnnualFrequencyData(annual, monthly):
@@ -127,17 +133,16 @@ def buildAnnualFrequencyData(annual, monthly):
                     monthValue = {"{0}:{1}".format(dataYear,m['month']):m['count']}
                     distrAnnualList.append(monthValue);
 
-
-
-    return(distrAnnualList);
+    resultStr = convertJSONSet(distrAnnualList)
+    return(resultStr);
 
 def getFreqListKey(item):
     return item[0]
 
 def sortFrequencyKeys(freq):
-    sorted_x = freq.sort(key=lambda x: x.get(1), reverse=True)
+#    sorted_x = freq.sort(key=lambda x: x.get(1), reverse=True)
 #    sorted_x = sorted(freq, key=operator.itemgetter(0))
-    return(sorted_x)
+    return(freq)
 
 def mapDistributionObjects(colDef, dataType):
     keyOrder = None
@@ -155,6 +160,11 @@ def mapDistributionObjects(colDef, dataType):
 
     return(distType, distData,keyOrder);
 
+def convertNumDictValue(colValue, type):
+    result = None
+    if (type=='Num'):
+        result = colValue if colValue else 0
+    return(result)
 
 def prepareColumnProfileStats(colStats, outputfile):
     """
@@ -175,30 +185,28 @@ def prepareColumnProfileStats(colStats, outputfile):
             "id": {
                 "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
                 "id": colId,
-                "version": 0,
                 "typeName": "hive_column",
-                "state": "ACTIVE"
             },
             "typeName": "hive_column",
             "values": {
-                "maxValue": colDef['max'],
-                "minValue": colDef['min'],
-                "meanValue": colDef['mean'],
-                "sumValue": colDef['sum'],
-                "averageLength": colDef['avg_length'],
-                "maxLength": colDef['max_length'],
-                "minLength": colDef['min_length'],
-                "cardinality": colDef['distincts'],
-                "empties": colDef['empties'],
-                "nonNullData": (colDef['numrows'] - colDef['nulls']),
-                "medianValue": None,
-                "numRows": colDef['numrows'],
-                "distributionType": distributionType,
-                "distributionData": distributionData,
-                "distributionKeyOrder" : distributionKeyOrder
+                "profileData": {
+                    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+                    "typeName": "hive_column_profile_data",
+                    "values": {
+                        "maxValue": convertNumDictValue(colDef['max'],"Num"),
+                        "minValue": convertNumDictValue(colDef['min'],"Num"),
+                        "meanValue": convertNumDictValue(colDef['mean'],"Num"),
+#                       "sumValue": convertNumDictValue(colDef['sum'],"Num"),
+                        "averageLength": convertNumDictValue(colDef['avg_length'],"Num"),
+                        "maxLength": convertNumDictValue(colDef['max_length'],"Num"),
+                        "cardinality": convertNumDictValue(colDef['distincts'],"Num"),
+ #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
+                        "nonNullData": convertNumDictValue((colDef['numrows'] - colDef['nulls']),"Num"),
+                        "distributionType": distributionType,
+                        "distributionData": distributionData
+                    }
+                }
             },
-            "traitNames": [
-            ],
             "traits": {
             }
         }
