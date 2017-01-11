@@ -29,7 +29,9 @@ You will need to specify the folowing properties in the file `profileBridge.ini`
 Below we can see an example of the profileBridge.ini file.
 `
 [AtlasServerReference]
+
 ATLAS_SERVER: server1.hdp
+
 ATLAS_PORT: 21000
 `
 
