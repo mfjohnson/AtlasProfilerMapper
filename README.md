@@ -19,12 +19,19 @@ Within the 'hwx-atlas-profileData' directory, run the update types script as sho
 This will add the necessary data profile types to Atlas.  Once this step is complete any tables processed by the Mosaic data generator and the mosaic bridge will be visible within the Atlas Profiler tab.
 
 ## Configure Mosaic to Atlas Data Profiler Bridge
-You will need to specify the folowing properties in the file `profileBridge.properties` in order for the profiler_bridge to write to the correct Atlas server instance.
+You will need to specify the folowing properties in the file `profileBridge.ini` in order for the profiler_bridge to write to the correct Atlas server instance.
 
 | Property | description |
 |----------|-------------|
 | ATLAS_DOMAIN | Contains the server reference to the Atlas Server.  The exact domain can be retrieved from Amabri Atlas configs. |
 | ATLAS_PORT | Contains the Atlas server port.  Normally this is 21000. |
+
+Below we can see an example of the profileBridge.ini file.
+`
+[AtlasServerReference]
+ATLAS_SERVER: server1.hdp
+ATLAS_PORT: 21000
+`
 
 ## Generating Profile stats and post those stats to Atlas Data Profiler
 

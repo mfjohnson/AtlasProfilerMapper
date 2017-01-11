@@ -1,11 +1,12 @@
 import requests
 import json
-import sys
-from requests.auth import HTTPDigestAuth
+import ConfigParser
 
+config = ConfigParser.ConfigParser()
+config.read("profileBridge.ini")
 
-ATLAS_DOMAIN="server1"
-ATLAS_PORT="21000"
+ATLAS_DOMAIN=config['AtlasServerReference']['ATLAS_DOMAIN']
+ATLAS_PORT=config['AtlasServerReference']['ATLAS_DOMAIN']
 
 def atlasGET( restAPI ) :
 ## TODO Verify received code = 200 or else produce an error
@@ -26,3 +27,4 @@ def atlasPUT( restAPI, data) :
     url = "http://" + ATLAS_DOMAIN + ":" + ATLAS_PORT + restAPI
     r = requests.put(url, auth=("admin", "admin"),json=data)
     return (json.loads(r.text));
+
