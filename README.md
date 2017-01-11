@@ -35,6 +35,7 @@ ATLAS_SERVER: server1.hdp
 
 ATLAS_PORT: 21000
 
+
 `
 
 ## Generating Profile stats and post those stats to Atlas Data Profiler
