@@ -1,54 +1,37 @@
 # Overview
 
-# Setting up Atlas Types
+# Bridge Requirements
+ * Python 2.7
+ * HDP 2.5.0 or 2.5.3
+ * pandas 0.18
+ * numpy 1.11.1
+ * Mosaic Profile Generator
+ 
+# Testing the deployment and running the Bridge
 
-There are two types which get updated to support the Atlas Data Profiler possible:
+## Setting up Atlas Types
+Within the 'hwx-atlas-profileData' directory, run the update types script as shown below. 
 
-| Atlas Modified type | Description | Update Defining file |
-|---------------------|-----------------------------------------|--------------------------|
-| hive_table          | Adds table total table rows.  Note: this value comes from the first field in the tables specified numrow | |
-| hive_column         | Adds the column statistics for display on the UI field detail views |  |
+`
+./update_types.sh
+`
 
-# Mapping Profiler Generator profileKind to AtlasType stats
+This will add the necessary data profile types to Atlas.  Once this step is complete any tables processed by the Mosaic data generator and the mosaic bridge will be visible within the Atlas Profiler tab.
 
-## Numeric Specific Stat types
-For non-numeric values a null will be entered into these fields
+## Configure Mosaic to Atlas Data Profiler Bridge
+You will need to specify the folowing properties in the file `profileBridge.properties` in order for the profiler_bridge to write to the correct Atlas server instance.
 
-| Stat Description | profileKind | Atlas Stat type Name |
-|------------------|-------------|----------------------|
-| The maximum value found for the data value | max | stats:maxValue |
-| The minimum value found for the data value | min | stats:minValue |
-| The mean of all data values for column | mean | stats:meanValue |
-| The total of all values | sum | stats:sumValue |
-| A set containing decile frequency | decilefreq | stats:decileFreq
+| Property | description |
+|----------|-------------|
+| ATLAS_DOMAIN | Contains the server reference to the Atlas Server.  The exact domain can be retrieved from Amabri Atlas configs. |
+| ATLAS_PORT | Contains the Atlas server port.  Normally this is 21000. |
 
-## String Specific stat types
-for non-string values a null will be entered into these fields
-
-| Stat Description | profileKind | Atlas Stat type Name |
-|------------------|-------------|----------------------|
-| The maximum string length found for the data value | max_length | stats:maxLength |
-| The minimum string length found for the data value | min_minlength | stats:minLength |
-| The average string length of all data values for column | avg_length | stats:avgLength|
-| A map which has a count of each key value TODO-Need to fix the atlas type to properly include this information| countfreq| stats:countFrequency |
-
-## String Specific stat types
-
-TODO - Need to finish the mappings
-
-## Common Stat types
-
-These stats will be populated for all datatypes
-
-| Stat Description | profileKind | Atlas Stat type Name |
-|------------------|-------------|----------------------|
-| The column cardinality count | distinct | stats:distinctCount |
-| The total number of empty fields (null or blank string) | empties  | stats:empties |
-| The total number of null values | nulls    | stats:nulls|
-| While this value is also used to populate the table rowcount, the UI views also are supposed to show the numrows, so this value is also included at the column level | numrows  | stats:numRows|
+## Generating Profile stats and post those stats to Atlas Data Profiler
 
 
+`./bin/mosaic-profile-hive.sh {databasename} {tablename} | python profiler_bridge.py`
 
-
-
+# Viewing the generated stats
+ 
+ From your browser connect via the ATLAS Server web page and then search for the table from which you generated and bridged the statistics.  Then select the profile tab option.
  

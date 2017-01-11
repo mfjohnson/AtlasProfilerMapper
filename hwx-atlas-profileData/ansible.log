@@ -1,0 +1,50 @@
+2017-01-06 08:45:51,481 p=74091 u=mjohnson |  server4.hdp | FAILED | rc=9 >>
+adduser: user 'demo1' already exists
+
+2017-01-06 08:45:51,482 p=74091 u=mjohnson |  server3.hdp | FAILED | rc=9 >>
+adduser: user 'demo1' already exists
+
+2017-01-06 08:45:51,488 p=74091 u=mjohnson |  server2.hdp | FAILED | rc=9 >>
+adduser: user 'demo1' already exists
+
+2017-01-06 08:45:51,686 p=74091 u=mjohnson |  server5.hdp | FAILED | rc=9 >>
+adduser: user 'demo1' already exists
+
+2017-01-06 08:45:51,715 p=74091 u=mjohnson |  server1.hdp | FAILED | rc=9 >>
+adduser: user 'demo1' already exists
+
+2017-01-06 08:49:30,633 p=74436 u=mjohnson |  server1.hdp | SUCCESS | rc=0 >>
+Changing password for user demo1.
+passwd: all authentication tokens updated successfully.
+
+2017-01-06 08:49:30,646 p=74436 u=mjohnson |  server4.hdp | SUCCESS | rc=0 >>
+Changing password for user demo1.
+passwd: all authentication tokens updated successfully.
+
+2017-01-06 08:49:30,652 p=74436 u=mjohnson |  server3.hdp | SUCCESS | rc=0 >>
+Changing password for user demo1.
+passwd: all authentication tokens updated successfully.
+
+2017-01-06 08:49:30,652 p=74436 u=mjohnson |  server2.hdp | SUCCESS | rc=0 >>
+Changing password for user demo1.
+passwd: all authentication tokens updated successfully.
+
+2017-01-06 08:49:30,850 p=74436 u=mjohnson |  server5.hdp | SUCCESS | rc=0 >>
+Changing password for user demo1.
+passwd: all authentication tokens updated successfully.
+
+2017-01-06 08:54:22,014 p=74862 u=mjohnson |  server4.hdp | SUCCESS | rc=0 >>
+
+
+2017-01-06 08:54:22,015 p=74862 u=mjohnson |  server2.hdp | SUCCESS | rc=0 >>
+
+
+2017-01-06 08:54:22,015 p=74862 u=mjohnson |  server3.hdp | SUCCESS | rc=0 >>
+
+
+2017-01-06 08:54:22,182 p=74862 u=mjohnson |  server5.hdp | SUCCESS | rc=0 >>
+
+
+2017-01-06 08:54:22,182 p=74862 u=mjohnson |  server1.hdp | SUCCESS | rc=0 >>
+
+

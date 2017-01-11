@@ -1,0 +1,50 @@
+{
+  "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
+  "id": {
+    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
+    "id": "-1234",
+    "typeName": "hive_column"
+  },
+  "typeName": "hive_column",
+  "values": {
+    "profileData": {
+      "jsonClass":"org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
+      "typeName":"hive_column_profile_data",
+      "values":{
+        "nonNullData":100,
+        "cardinality":85000,
+        "minValue":1,
+        "maxValue":85001,
+        "meanValue":10000000,
+        "medianValue":10000000,
+        "distributionType": "decile-frequency",
+        "distributionData": "{
+          \"1-10000\": 1000,
+          \"10001-20000\": 1100,
+          \"20001-30000\": 1200,
+          \"30001-40000\": 1300,
+          \"40001-50000\": 1400,
+          \"50001-60000\": 1500,
+          \"60001-70000\": 1600,
+          \"70001-80000\": 1700,
+          \"80001-90000\": 1900,
+          \"90001-100000\": 2000
+        }",
+        "distributionKeyOrder": [
+          "1-10000",
+          "10001-20000",
+          "20001-30000",
+          "30001-40000",
+          "40001-50000",
+          "50001-60000",
+          "60001-70000",
+          "70001-80000",
+          "80001-90000",
+          "90001-100000"
+        ]
+      }
+    }
+  },
+  "traits": {
+  }
+}

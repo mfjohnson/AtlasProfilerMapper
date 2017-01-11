@@ -1,0 +1,26 @@
+{
+    "id": {
+        "id": "-1234",
+        "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Id",
+        "typeName": "hive_column"
+    },
+    "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
+    "traits": {},
+    "typeName": "hive_column",
+    "values": {
+        "profileData": {
+            "averageLength": 3,
+            "cardinality": 1,
+            "distributionData": "{\"ABC\": 9999}",
+            "distributionKeyOrder": "{\"ABC\": 9999}",
+            "distributionType": "count-frequency",
+            "empties": 0,
+            "maxLength": 3,
+            "maxValue": 0,
+            "meanValue": 0,
+            "minValue": 0,
+            "nonNullData": 9999,
+            "sumValue": 0
+        }
+    }
+}
