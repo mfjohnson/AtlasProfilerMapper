@@ -32,8 +32,7 @@ def extractArguments():
             inputfile = open(a)
         elif o == '-o':
             outputfile = a
-        else:
-            print("Usage: %s -i input -o output" % sys.argv[0])
+
 
     json_data = inputfile.read()
     df = pd.read_json(json_data)
