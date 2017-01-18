@@ -1,21 +1,15 @@
-import json
+
 import pandas as pd
 import numpy as np
 from ATLASAPI import *
 import sys, getopt
-import operator
-
-# TODO Document the methods
-#------ SPECIFY DEFAULT PROPERTIES
-clustername = "HDP"
-
 
 #------ UTILITY METHODS
 def extractArguments():
     # ------- Get Command line properties
     global isOutputRESTCommand
-    inputfile = sys.stdin
-    outputfile = None
+    input_file = sys.stdin
+    output_file = None
 
     try:
         cmd_opts, args = getopt.getopt(sys.argv[1:], "i:o:")
@@ -29,38 +23,44 @@ def extractArguments():
     ###############################
     for o, a in cmd_opts:
         if o == '-i':
-            inputfile = open(a)
+            input_file = open(a)
         elif o == '-o':
-            outputfile = a
+            output_file = a
 
-
-    json_data = inputfile.read()
+    json_data = input_file.read()
     df = pd.read_json(json_data)
-    return(df,outputfile)
+    return(df, output_file)
 
-def prepareProfileVariables(df):
+
+def prepare_profile_variables(clustername, df):
+    """
+    Summarizes the Mosaic profileKind data by the qualified column name.
+    :param df:
+    :return:
+    """
     # ------- Calculate new columns of data and pivot table
     df['qualifiedName'] = df['database'] + "." + df['table'].str.lower() + "." + df['field'].str.lower() + "@" + clustername
     a = df[['qualifiedName','dataType','profileKind','value']]
-#    colStats = a.pivot(index='qualifiedName', columns='profileKind', values='value')
     colStats = pd.pivot_table(a, values='value', index=['qualifiedName','dataType'], columns=['profileKind'],aggfunc=np.sum)
     return colStats;
 
 
-#  TODO: Cleanup the tableId and the numRows calculator
-def prepareTableProfileStats(stats,outputfile):
+def prepare_table_profile_stats(tableFQDN, stats, outputfile):
     """
+    Assigns the number of rows to the Atlas Table numrow property
+    :param tableFQDN:
     :param stats:
     :param outputfile:
     :return:
 
 
     """
-    global tableFQDN, table_properties
-    tableId = "-1234"
+    global table_properties
+
     print(stats)
     numRows = stats['numrows'].iloc[0]
-    tableFQDN = "default.customer_info1@HDP"
+
+
     tableResult = None
     table_properties = {
         "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Reference",
@@ -209,6 +209,7 @@ def prepareColumnProfileStats(colStats, outputfile):
             "traits": {
             }
         }
+        #TODO
         print json.dumps(column_properties, indent=4, sort_keys=True)
         result = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_column&property=qualifiedName&value=%s" % (colFQDN),
