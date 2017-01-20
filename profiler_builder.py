@@ -209,8 +209,7 @@ def prepareColumnProfileStats(colStats, outputfile):
             "traits": {
             }
         }
-        #TODO
-        print json.dumps(column_properties, indent=4, sort_keys=True)
+
         result = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_column&property=qualifiedName&value=%s" % (colFQDN),
             column_properties)
