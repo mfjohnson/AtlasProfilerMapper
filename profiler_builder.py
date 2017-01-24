@@ -89,9 +89,9 @@ def prepare_table_profile_stats(tableFQDN, stats, outputfile):
     }
     logging.debug(json.dumps(table_properties, indent=4, sort_keys=True))
     if not outputfile:
-        tableResult = atlasPOST(
-            "/api/atlas/entities/qualifiedName?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN),
-            table_properties)
+         tableResult = atlasPOST(
+             "/api/atlas/entities/qualifiedName?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN),
+             table_properties)
 
     return(tableResult);
 
@@ -167,7 +167,7 @@ def mapDistributionObjects(colDef, dataType):
 def convertNumDictValue(colValue, type):
     result = None
     if (type=='Num'):
-        result = colValue if colValue else 0
+        result = colValue if colValue and pd.notnull(colValue) else 0
     return(result)
 
 def prepareColumnProfileStats(colStats, outputfile):
