@@ -106,6 +106,10 @@ def buildValueFreqData(s):
             }
             decileList.append(value)
     resultStr = convertJSONSet(decileList)
+    logging.debug("---------------------------------------------")
+    logging.debug("      Decile Frequency List")
+    logging.debug(json.dumps(resultStr, indent=4, sort_keys=True))
+    logging.debug("---------------------------------------------")
     return resultStr;
 
 
@@ -155,7 +159,7 @@ def mapDistributionObjects(colDef, dataType):
         distType="count-frequency"
         distData= buildValueFreqData(colDef['countfreq'])
         keyOrder = sortFrequencyKeys(distData);
-    elif (dataType=='date'):
+    elif (dataType=='date' or dataType=='timestamp'):
         distType = "annual"
         distData = buildAnnualFrequencyData(colDef['annual'], colDef['monthly']);
     else:  # Assuming if not string nor date it must be numeric
@@ -205,7 +209,7 @@ def prepareColumnProfileStats(colStats, outputfile):
                         "maxLength": convertNumDictValue(colDef['max_length'],"Num"),
                         "cardinality": convertNumDictValue(colDef['distincts'],"Num"),
  #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
-                        "nonNullData": convertNumDictValue((1-(colDef['nulls'])/colDef['numrows'])*100,"Num"),
+                        "nonNullData": (1-(convertNumDictValue(colDef['nulls'],"Num")/convertNumDictValue(colDef['numrows'],"Num"))*100),
                         "distributionType": distributionType,
                         "distributionData": distributionData
                     }
