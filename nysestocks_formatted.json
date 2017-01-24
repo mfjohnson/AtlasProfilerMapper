@@ -1,0 +1,586 @@
+[
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 15028
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 1947.47998046875
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.14000000059604645
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 19.080153918998615
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 15511955.254452765
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_adj_close", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.14 to 194.87\",\"low\":\"0.14\",\"idx\":0,\"value\":809834,\"high\":\"194.87\"},{\"key\":\"194.87 to 389.61\",\"low\":\"194.87\",\"idx\":1,\"value\":1671,\"high\":\"389.61\"},{\"key\":\"389.61 to 584.34\",\"low\":\"389.61\",\"idx\":2,\"value\":957,\"high\":\"584.34\"},{\"key\":\"584.34 to 779.08\",\"low\":\"584.34\",\"idx\":3,\"value\":27,\"high\":\"779.08\"},{\"key\":\"779.08 to 973.81\",\"low\":\"779.08\",\"idx\":4,\"value\":0,\"high\":\"973.81\"},{\"key\":\"973.81 to 1168.54\",\"low\":\"973.81\",\"idx\":5,\"value\":19,\"high\":\"1168.54\"},{\"key\":\"1168.54 to 1363.28\",\"low\":\"1168.54\",\"idx\":6,\"value\":52,\"high\":\"1363.28\"},{\"key\":\"1363.28 to 1558.01\",\"low\":\"1363.28\",\"idx\":7,\"value\":232,\"high\":\"1558.01\"},{\"key\":\"1558.01 to 1752.75\",\"low\":\"1558.01\",\"idx\":8,\"value\":142,\"high\":\"1752.75\"},{\"key\":\"1752.75 to 1947.48\",\"low\":\"1752.75\",\"idx\":9,\"value\":55,\"high\":\"1947.48\"}]"
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 13986
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 623.010009765625
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 26.911023026762127
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 21878365.699504316
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_low", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.00 to 62.30\",\"low\":\"0.00\",\"idx\":0,\"value\":761195,\"high\":\"62.30\"},{\"key\":\"62.30 to 124.60\",\"low\":\"62.30\",\"idx\":1,\"value\":45532,\"high\":\"124.60\"},{\"key\":\"124.60 to 186.90\",\"low\":\"124.60\",\"idx\":2,\"value\":3833,\"high\":\"186.90\"},{\"key\":\"186.90 to 249.20\",\"low\":\"186.90\",\"idx\":3,\"value\":772,\"high\":\"249.20\"},{\"key\":\"249.20 to 311.51\",\"low\":\"249.20\",\"idx\":4,\"value\":503,\"high\":\"311.51\"},{\"key\":\"311.51 to 373.81\",\"low\":\"311.51\",\"idx\":5,\"value\":230,\"high\":\"373.81\"},{\"key\":\"373.81 to 436.11\",\"low\":\"373.81\",\"idx\":6,\"value\":158,\"high\":\"436.11\"},{\"key\":\"436.11 to 498.41\",\"low\":\"436.11\",\"idx\":7,\"value\":321,\"high\":\"498.41\"},{\"key\":\"498.41 to 560.71\",\"low\":\"498.41\",\"idx\":8,\"value\":262,\"high\":\"560.71\"},{\"key\":\"560.71 to 623.01\",\"low\":\"560.71\",\"idx\":9,\"value\":183,\"high\":\"623.01\"}]"
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 58993
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 358280000
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 664396.66514553083
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 540147180400
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_volume", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.00 to 35828000.00\",\"low\":\"0.00\",\"idx\":0,\"value\":812826,\"high\":\"35828000.00\"},{\"key\":\"35828000.00 to 71656000.00\",\"low\":\"35828000.00\",\"idx\":1,\"value\":146,\"high\":\"71656000.00\"},{\"key\":\"71656000.00 to 107484000.00\",\"low\":\"71656000.00\",\"idx\":2,\"value\":11,\"high\":\"107484000.00\"},{\"key\":\"107484000.00 to 143312000.00\",\"low\":\"107484000.00\",\"idx\":3,\"value\":3,\"high\":\"143312000.00\"},{\"key\":\"143312000.00 to 179140000.00\",\"low\":\"143312000.00\",\"idx\":4,\"value\":2,\"high\":\"179140000.00\"},{\"key\":\"179140000.00 to 214968000.00\",\"low\":\"179140000.00\",\"idx\":5,\"value\":0,\"high\":\"214968000.00\"},{\"key\":\"214968000.00 to 250796000.00\",\"low\":\"214968000.00\",\"idx\":6,\"value\":0,\"high\":\"250796000.00\"},{\"key\":\"250796000.00 to 286624000.00\",\"low\":\"250796000.00\",\"idx\":7,\"value\":0,\"high\":\"286624000.00\"},{\"key\":\"286624000.00 to 322452000.00\",\"low\":\"286624000.00\",\"idx\":8,\"value\":0,\"high\":\"322452000.00\"},{\"key\":\"322452000.00 to 358280000.00\",\"low\":\"322452000.00\",\"idx\":9,\"value\":1,\"high\":\"358280000.00\"}]"
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 1734
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "max_length", 
+        "table": "test_nyse_stocks", 
+        "value": 4
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "min_length", 
+        "table": "test_nyse_stocks", 
+        "value": 1
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "avg_length", 
+        "table": "test_nyse_stocks", 
+        "value": 2.9188500705421601
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "empties", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "stock_symbol", 
+        "profileKind": "countfreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"IPG\",\"value\":500},{\"key\":\"DIS\",\"value\":500},{\"key\":\"SLM\",\"value\":500},{\"key\":\"CP\",\"value\":500},{\"key\":\"RVT\",\"value\":500},{\"key\":\"EWI\",\"value\":500},{\"key\":\"BHP\",\"value\":500},{\"key\":\"CT\",\"value\":500},{\"key\":\"GAM\",\"value\":500},{\"key\":\"SUI\",\"value\":500},{\"key\":\"SNS\",\"value\":500},{\"key\":\"NTC\",\"value\":500},{\"key\":\"SBW\",\"value\":500},{\"key\":\"JWN\",\"value\":500},{\"key\":\"AIV\",\"value\":500},{\"key\":\"TSM\",\"value\":500},{\"key\":\"PLD\",\"value\":500},{\"key\":\"NVS\",\"value\":500},{\"key\":\"ELN\",\"value\":500},{\"key\":\"MAS\",\"value\":500},{\"key\":\"PPL\",\"value\":500},{\"key\":\"GLW\",\"value\":500},{\"key\":\"NTX\",\"value\":500},{\"key\":\"SOR\",\"value\":500},{\"key\":\"HUM\",\"value\":500},{\"key\":\"MYL\",\"value\":500},{\"key\":\"UGI\",\"value\":500},{\"key\":\"LEO\",\"value\":500},{\"key\":\"MSY\",\"value\":500},{\"key\":\"VOQ\",\"value\":500},{\"key\":\"KG\",\"value\":500},{\"key\":\"SCX\",\"value\":500},{\"key\":\"SGU\",\"value\":500},{\"key\":\"RAS\",\"value\":500},{\"key\":\"KR\",\"value\":500},{\"key\":\"IO\",\"value\":500},{\"key\":\"GFI\",\"value\":500},{\"key\":\"EWN\",\"value\":500},{\"key\":\"TK\",\"value\":500},{\"key\":\"HPQ\",\"value\":500},{\"key\":\"SJW\",\"value\":500},{\"key\":\"CCZ\",\"value\":500},{\"key\":\"PEI\",\"value\":500},{\"key\":\"MKC\",\"value\":500},{\"key\":\"BP\",\"value\":500},{\"key\":\"TAI\",\"value\":500},{\"key\":\"NXN\",\"value\":500},{\"key\":\"STC\",\"value\":500},{\"key\":\"WRB\",\"value\":500},{\"key\":\"VNO\",\"value\":500},{\"key\":\"AES\",\"value\":500},{\"key\":\"TWX\",\"value\":500},{\"key\":\"ICS\",\"value\":500},{\"key\":\"EWJ\",\"value\":500},{\"key\":\"POM\",\"value\":500},{\"key\":\"WRI\",\"value\":500},{\"key\":\"VGR\",\"value\":500},{\"key\":\"NXY\",\"value\":500},{\"key\":\"MMM\",\"value\":500},{\"key\":\"DSM\",\"value\":500},{\"key\":\"ADP\",\"value\":500},{\"key\":\"NVE\",\"value\":500},{\"key\":\"RTN\",\"value\":500},{\"key\":\"CCI\",\"value\":500},{\"key\":\"RBN\",\"value\":500},{\"key\":\"MCR\",\"value\":500},{\"key\":\"KTP\",\"value\":500},{\"key\":\"AMN\",\"value\":500},{\"key\":\"AME\",\"value\":500},{\"key\":\"VMC\",\"value\":500},{\"key\":\"CBL\",\"value\":500},{\"key\":\"BNI\",\"value\":500},{\"key\":\"JPM\",\"value\":500},{\"key\":\"NTZ\",\"value\":500},{\"key\":\"MPR\",\"value\":500},{\"key\":\"HIX\",\"value\":500},{\"key\":\"VLT\",\"value\":500},{\"key\":\"FRX\",\"value\":500},{\"key\":\"DD\",\"value\":500},{\"key\":\"PHX\",\"value\":500},{\"key\":\"AYE\",\"value\":500},{\"key\":\"WBS\",\"value\":500},{\"key\":\"WFC\",\"value\":500},{\"key\":\"EME\",\"value\":500},{\"key\":\"ED\",\"value\":500},{\"key\":\"USU\",\"value\":500},{\"key\":\"VMI\",\"value\":500},{\"key\":\"AP\",\"value\":500},{\"key\":\"MO\",\"value\":500},{\"key\":\"VCO\",\"value\":500},{\"key\":\"CRH\",\"value\":500},{\"key\":\"PFO\",\"value\":500},{\"key\":\"IT\",\"value\":500},{\"key\":\"GGG\",\"value\":500},{\"key\":\"HLX\",\"value\":500},{\"key\":\"MUJ\",\"value\":500},{\"key\":\"RE\",\"value\":500},{\"key\":\"THO\",\"value\":500},{\"key\":\"GTY\",\"value\":500},{\"key\":\"AU\",\"value\":500},{\"key\":\"CIB\",\"value\":500},{\"key\":\"IMA\",\"value\":500},{\"key\":\"GXP\",\"value\":500},{\"key\":\"SF\",\"value\":500},{\"key\":\"IRE\",\"value\":500},{\"key\":\"HD\",\"value\":500},{\"key\":\"ALL\",\"value\":500},{\"key\":\"FUL\",\"value\":500},{\"key\":\"GIL\",\"value\":500},{\"key\":\"DBD\",\"value\":500},{\"key\":\"NTT\",\"value\":500},{\"key\":\"ETN\",\"value\":500},{\"key\":\"VPV\",\"value\":500},{\"key\":\"MSA\",\"value\":500},{\"key\":\"EWQ\",\"value\":500},{\"key\":\"WMT\",\"value\":500},{\"key\":\"TGT\",\"value\":500},{\"key\":\"SFG\",\"value\":500},{\"key\":\"EWM\",\"value\":500},{\"key\":\"PBI\",\"value\":500},{\"key\":\"ISH\",\"value\":500},{\"key\":\"DOM\",\"value\":500},{\"key\":\"NOK\",\"value\":500},{\"key\":\"RYN\",\"value\":500},{\"key\":\"IGT\",\"value\":500},{\"key\":\"CAG\",\"value\":500},{\"key\":\"EWH\",\"value\":500},{\"key\":\"MSB\",\"value\":500},{\"key\":\"AAI\",\"value\":500},{\"key\":\"ALE\",\"value\":500},{\"key\":\"GG\",\"value\":500},{\"key\":\"VZ\",\"value\":500},{\"key\":\"PKE\",\"value\":500},{\"key\":\"BRO\",\"value\":500},{\"key\":\"CI\",\"value\":500},{\"key\":\"SBP\",\"value\":500},{\"key\":\"LOW\",\"value\":500},{\"key\":\"TMX\",\"value\":500},{\"key\":\"GVA\",\"value\":500},{\"key\":\"WAB\",\"value\":500},{\"key\":\"RLI\",\"value\":500},{\"key\":\"NMT\",\"value\":500},{\"key\":\"TBL\",\"value\":500},{\"key\":\"KWK\",\"value\":500},{\"key\":\"LEG\",\"value\":500},{\"key\":\"HIS\",\"value\":500},{\"key\":\"EK\",\"value\":500},{\"key\":\"EMN\",\"value\":500},{\"key\":\"MTR\",\"value\":500},{\"key\":\"BAK\",\"value\":500},{\"key\":\"DOW\",\"value\":500},{\"key\":\"MEE\",\"value\":500},{\"key\":\"FICO\",\"value\":500},{\"key\":\"ARL\",\"value\":500},{\"key\":\"SSP\",\"value\":500},{\"key\":\"DNP\",\"value\":500},{\"key\":\"SUR\",\"value\":500},{\"key\":\"EGP\",\"value\":500},{\"key\":\"MYJ\",\"value\":500},{\"key\":\"AIG\",\"value\":500},{\"key\":\"AM\",\"value\":500},{\"key\":\"OLP\",\"value\":500},{\"key\":\"ABT\",\"value\":500},{\"key\":\"FNB\",\"value\":500},{\"key\":\"MLI\",\"value\":500},{\"key\":\"TFX\",\"value\":500},{\"key\":\"MCD\",\"value\":500},{\"key\":\"UL\",\"value\":500},{\"key\":\"MDC\",\"value\":500},{\"key\":\"NSM\",\"value\":500},{\"key\":\"SU\",\"value\":500},{\"key\":\"UTL\",\"value\":500},{\"key\":\"CMO\",\"value\":500},{\"key\":\"MIY\",\"value\":500},{\"key\":\"MOD\",\"value\":500},{\"key\":\"HNT\",\"value\":500},{\"key\":\"CATO\",\"value\":500},{\"key\":\"KO\",\"value\":500},{\"key\":\"ABM\",\"value\":500},{\"key\":\"VHI\",\"value\":500},{\"key\":\"PFE\",\"value\":500},{\"key\":\"PDT\",\"value\":500},{\"key\":\"TNC\",\"value\":500},{\"key\":\"SLB\",\"value\":500},{\"key\":\"USG\",\"value\":500},{\"key\":\"HGT\",\"value\":500},{\"key\":\"SSL\",\"value\":500},{\"key\":\"FCX\",\"value\":500},{\"key\":\"LSI\",\"value\":500},{\"key\":\"CCE\",\"value\":500},{\"key\":\"JNPR\",\"value\":500},{\"key\":\"HCN\",\"value\":500},{\"key\":\"CAT\",\"value\":500},{\"key\":\"AMB\",\"value\":500},{\"key\":\"LG\",\"value\":500},{\"key\":\"GE\",\"value\":500},{\"key\":\"MOT\",\"value\":500},{\"key\":\"ENB\",\"value\":500},{\"key\":\"DUK\",\"value\":500},{\"key\":\"CCL\",\"value\":500},{\"key\":\"TE\",\"value\":500},{\"key\":\"CVX\",\"value\":500},{\"key\":\"SII\",\"value\":500},{\"key\":\"MAY\",\"value\":500},{\"key\":\"BA\",\"value\":500},{\"key\":\"GBX\",\"value\":500},{\"key\":\"EWU\",\"value\":500},{\"key\":\"ROP\",\"value\":500},{\"key\":\"VSH\",\"value\":500},{\"key\":\"AIT\",\"value\":500},{\"key\":\"CRA\",\"value\":500},{\"key\":\"AZZ\",\"value\":500},{\"key\":\"EWK\",\"value\":500},{\"key\":\"MAA\",\"value\":500},{\"key\":\"UNP\",\"value\":500},{\"key\":\"HW\",\"value\":500},{\"key\":\"OSG\",\"value\":500},{\"key\":\"SYY\",\"value\":500},{\"key\":\"OII\",\"value\":500},{\"key\":\"RIG\",\"value\":500},{\"key\":\"CTS\",\"value\":500},{\"key\":\"EEP\",\"value\":500},{\"key\":\"BBV\",\"value\":500},{\"key\":\"ANF\",\"value\":500},{\"key\":\"BSI\",\"value\":500},{\"key\":\"TLM\",\"value\":500},{\"key\":\"PRM\",\"value\":500},{\"key\":\"PC\",\"value\":500},{\"key\":\"XL\",\"value\":500},{\"key\":\"HON\",\"value\":500},{\"key\":\"MLR\",\"value\":500},{\"key\":\"ING\",\"value\":500},{\"key\":\"HOC\",\"value\":500},{\"key\":\"GPS\",\"value\":500},{\"key\":\"PBT\",\"value\":500},{\"key\":\"CMS\",\"value\":500},{\"key\":\"LBY\",\"value\":500},{\"key\":\"SM\",\"value\":500},{\"key\":\"AON\",\"value\":500},{\"key\":\"TFC\",\"value\":500},{\"key\":\"RPT\",\"value\":500},{\"key\":\"ABK\",\"value\":500},{\"key\":\"BRS\",\"value\":500},{\"key\":\"HSY\",\"value\":500},{\"key\":\"EV\",\"value\":500},{\"key\":\"AXP\",\"value\":500},{\"key\":\"SPG\",\"value\":500},{\"key\":\"LM\",\"value\":500},{\"key\":\"FGP\",\"value\":500},{\"key\":\"NRT\",\"value\":500},{\"key\":\"SJR\",\"value\":500},{\"key\":\"CHP\",\"value\":500},{\"key\":\"CIR\",\"value\":500},{\"key\":\"FCF\",\"value\":500},{\"key\":\"IDA\",\"value\":500},{\"key\":\"TAP\",\"value\":500},{\"key\":\"FDS\",\"value\":500},{\"key\":\"WST\",\"value\":500},{\"key\":\"DVN\",\"value\":500},{\"key\":\"HNP\",\"value\":500},{\"key\":\"ACE\",\"value\":500},{\"key\":\"EXP\",\"value\":500},{\"key\":\"BZH\",\"value\":500},{\"key\":\"BMY\",\"value\":500},{\"key\":\"MEG\",\"value\":500},{\"key\":\"XAA\",\"value\":500},{\"key\":\"BBX\",\"value\":500},{\"key\":\"IBM\",\"value\":500},{\"key\":\"NYM\",\"value\":500},{\"key\":\"AEP\",\"value\":500},{\"key\":\"RNR\",\"value\":500},{\"key\":\"ACV\",\"value\":500},{\"key\":\"TUP\",\"value\":500},{\"key\":\"CVG\",\"value\":500},{\"key\":\"DOV\",\"value\":500},{\"key\":\"SEE\",\"value\":500},{\"key\":\"BLL\",\"value\":500},{\"key\":\"RSC\",\"value\":500},{\"key\":\"COP\",\"value\":500},{\"key\":\"WGL\",\"value\":500},{\"key\":\"CLX\",\"value\":500},{\"key\":\"PGN\",\"value\":500},{\"key\":\"IQN\",\"value\":500},{\"key\":\"CASC\",\"value\":500},{\"key\":\"BXS\",\"value\":500},{\"key\":\"BSP\",\"value\":500},{\"key\":\"PCM\",\"value\":500},{\"key\":\"CBU\",\"value\":500},{\"key\":\"IHC\",\"value\":500},{\"key\":\"CMU\",\"value\":500},{\"key\":\"WHR\",\"value\":500},{\"key\":\"CDR\",\"value\":500},{\"key\":\"DGX\",\"value\":500},{\"key\":\"WOR\",\"value\":500},{\"key\":\"CAH\",\"value\":500},{\"key\":\"DHI\",\"value\":500},{\"key\":\"MGS\",\"value\":500},{\"key\":\"BBVA\",\"value\":500},{\"key\":\"ROL\",\"value\":500},{\"key\":\"SKX\",\"value\":500},{\"key\":\"KBH\",\"value\":500},{\"key\":\"FPL\",\"value\":500},{\"key\":\"HRB\",\"value\":500},{\"key\":\"GSK\",\"value\":500},{\"key\":\"MDP\",\"value\":500},{\"key\":\"NYB\",\"value\":500},{\"key\":\"CAS\",\"value\":500},{\"key\":\"APD\",\"value\":500},{\"key\":\"EMC\",\"value\":500},{\"key\":\"BC\",\"value\":500},{\"key\":\"ACS\",\"value\":500},{\"key\":\"HYB\",\"value\":500},{\"key\":\"KEI\",\"value\":500},{\"key\":\"KYO\",\"value\":500},{\"key\":\"EWD\",\"value\":500},{\"key\":\"SR\",\"value\":500},{\"key\":\"INT\",\"value\":500},{\"key\":\"CPK\",\"value\":500},{\"key\":\"TER\",\"value\":500},{\"key\":\"IBA\",\"value\":500},{\"key\":\"ATO\",\"value\":500},{\"key\":\"EWL\",\"value\":500},{\"key\":\"MRK\",\"value\":500},{\"key\":\"MCY\",\"value\":500},{\"key\":\"HME\",\"value\":500},{\"key\":\"MI\",\"value\":500},{\"key\":\"DRL\",\"value\":500},{\"key\":\"JEF\",\"value\":500},{\"key\":\"PHG\",\"value\":500},{\"key\":\"FL\",\"value\":500},{\"key\":\"AVX\",\"value\":500},{\"key\":\"CAL\",\"value\":500},{\"key\":\"BCS\",\"value\":500},{\"key\":\"NXC\",\"value\":500},{\"key\":\"AWR\",\"value\":500},{\"key\":\"ACG\",\"value\":500},{\"key\":\"SNF\",\"value\":500},{\"key\":\"WAG\",\"value\":500},{\"key\":\"BAC\",\"value\":500},{\"key\":\"LEN\",\"value\":500},{\"key\":\"FRT\",\"value\":500},{\"key\":\"GT\",\"value\":500},{\"key\":\"NAZ\",\"value\":500},{\"key\":\"FE\",\"value\":500},{\"key\":\"TOL\",\"value\":500},{\"key\":\"XRX\",\"value\":500},{\"key\":\"DYN\",\"value\":500},{\"key\":\"MMC\",\"value\":500},{\"key\":\"NNN\",\"value\":500},{\"key\":\"STU\",\"value\":500},{\"key\":\"CW\",\"value\":500},{\"key\":\"PG\",\"value\":500},{\"key\":\"KUB\",\"value\":500},{\"key\":\"HHY\",\"value\":500},{\"key\":\"MFT\",\"value\":500},{\"key\":\"GDF\",\"value\":500},{\"key\":\"WTS\",\"value\":500},{\"key\":\"KDE\",\"value\":500},{\"key\":\"SCL\",\"value\":500},{\"key\":\"AIB\",\"value\":500},{\"key\":\"SFD\",\"value\":500},{\"key\":\"EXC\",\"value\":500},{\"key\":\"CMI\",\"value\":500},{\"key\":\"ODC\",\"value\":500},{\"key\":\"GRT\",\"value\":500},{\"key\":\"UBA\",\"value\":500},{\"key\":\"SUN\",\"value\":500},{\"key\":\"CVC\",\"value\":500},{\"key\":\"ASH\",\"value\":500},{\"key\":\"CRS\",\"value\":500},{\"key\":\"OFC\",\"value\":500},{\"key\":\"STJ\",\"value\":500},{\"key\":\"PDS\",\"value\":500},{\"key\":\"CEG\",\"value\":500},{\"key\":\"DSU\",\"value\":500},{\"key\":\"LII\",\"value\":500},{\"key\":\"IRM\",\"value\":500},{\"key\":\"PKY\",\"value\":500},{\"key\":\"SPP\",\"value\":500},{\"key\":\"CBK\",\"value\":500},{\"key\":\"HR\",\"value\":500},{\"key\":\"TVC\",\"value\":500},{\"key\":\"FAF\",\"value\":500},{\"key\":\"EVN\",\"value\":500},{\"key\":\"PMM\",\"value\":500},{\"key\":\"LZB\",\"value\":500},{\"key\":\"RHT\",\"value\":500},{\"key\":\"RUK\",\"value\":500},{\"key\":\"MTB\",\"value\":500},{\"key\":\"APX\",\"value\":500},{\"key\":\"BRY\",\"value\":500},{\"key\":\"BAX\",\"value\":500},{\"key\":\"MGA\",\"value\":500},{\"key\":\"TEN\",\"value\":500},{\"key\":\"VCV\",\"value\":500},{\"key\":\"SJT\",\"value\":500},{\"key\":\"HCP\",\"value\":500},{\"key\":\"IDC\",\"value\":500},{\"key\":\"PVA\",\"value\":500},{\"key\":\"AET\",\"value\":500},{\"key\":\"FRM\",\"value\":500},{\"key\":\"PLA\",\"value\":500},{\"key\":\"HIF\",\"value\":500},{\"key\":\"BDN\",\"value\":500},{\"key\":\"ONB\",\"value\":500},{\"key\":\"APA\",\"value\":500},{\"key\":\"YPF\",\"value\":500},{\"key\":\"AMD\",\"value\":500},{\"key\":\"NZT\",\"value\":500},{\"key\":\"MOV\",\"value\":500},{\"key\":\"OXY\",\"value\":500},{\"key\":\"ZTR\",\"value\":500},{\"key\":\"VIP\",\"value\":500},{\"key\":\"MHP\",\"value\":500},{\"key\":\"ALD\",\"value\":500},{\"key\":\"MYF\",\"value\":500},{\"key\":\"EWS\",\"value\":500},{\"key\":\"RF\",\"value\":500},{\"key\":\"RKT\",\"value\":500},{\"key\":\"STZ\",\"value\":500},{\"key\":\"CFI\",\"value\":500},{\"key\":\"KMP\",\"value\":500},{\"key\":\"BBY\",\"value\":500},{\"key\":\"PL\",\"value\":500},{\"key\":\"UTX\",\"value\":500},{\"key\":\"AVY\",\"value\":500},{\"key\":\"TOT\",\"value\":500},{\"key\":\"EIX\",\"value\":500},{\"key\":\"BMI\",\"value\":500},{\"key\":\"HPT\",\"value\":500},{\"key\":\"OXM\",\"value\":500},{\"key\":\"HSF\",\"value\":500},{\"key\":\"MSD\",\"value\":500},{\"key\":\"CWT\",\"value\":500},{\"key\":\"DDR\",\"value\":500},{\"key\":\"CRR\",\"value\":500},{\"key\":\"MW\",\"value\":500},{\"key\":\"EOG\",\"value\":500},{\"key\":\"PEP\",\"value\":500},{\"key\":\"ASP\",\"value\":500},{\"key\":\"NGT\",\"value\":500},{\"key\":\"SCG\",\"value\":500},{\"key\":\"MU\",\"value\":500},{\"key\":\"NUE\",\"value\":500},{\"key\":\"KSM\",\"value\":500},{\"key\":\"DCI\",\"value\":500},{\"key\":\"MYN\",\"value\":500},{\"key\":\"HSC\",\"value\":500},{\"key\":\"TR\",\"value\":500},{\"key\":\"ROG\",\"value\":500},{\"key\":\"MNP\",\"value\":500},{\"key\":\"SPH\",\"value\":500},{\"key\":\"CMC\",\"value\":500},{\"key\":\"YUM\",\"value\":500},{\"key\":\"GGB\",\"value\":500},{\"key\":\"FUR\",\"value\":500},{\"key\":\"TYC\",\"value\":500},{\"key\":\"IMC\",\"value\":500},{\"key\":\"ITT\",\"value\":500},{\"key\":\"ALG\",\"value\":500},{\"key\":\"XOM\",\"value\":500},{\"key\":\"NTL\",\"value\":500},{\"key\":\"EWP\",\"value\":500},{\"key\":\"MS\",\"value\":500},{\"key\":\"GCO\",\"value\":500},{\"key\":\"UNH\",\"value\":500},{\"key\":\"LMT\",\"value\":500},{\"key\":\"NST\",\"value\":500},{\"key\":\"USA\",\"value\":500},{\"key\":\"SWY\",\"value\":500},{\"key\":\"TRU\",\"value\":500},{\"key\":\"PAI\",\"value\":500},{\"key\":\"CRT\",\"value\":500},{\"key\":\"ELX\",\"value\":500},{\"key\":\"LLY\",\"value\":500},{\"key\":\"NNF\",\"value\":500},{\"key\":\"UNF\",\"value\":500},{\"key\":\"XEL\",\"value\":500},{\"key\":\"AJG\",\"value\":500},{\"key\":\"NMI\",\"value\":500},{\"key\":\"RSH\",\"value\":500},{\"key\":\"VTJ\",\"value\":500},{\"key\":\"CSX\",\"value\":500},{\"key\":\"KWR\",\"value\":500},{\"key\":\"LUV\",\"value\":500},{\"key\":\"CBM\",\"value\":500},{\"key\":\"TEG\",\"value\":500},{\"key\":\"CPF\",\"value\":500},{\"key\":\"BFS\",\"value\":500},{\"key\":\"NBR\",\"value\":500},{\"key\":\"HMY\",\"value\":500},{\"key\":\"WSM\",\"value\":500},{\"key\":\"STD\",\"value\":500},{\"key\":\"WHI\",\"value\":500},{\"key\":\"TNL\",\"value\":500},{\"key\":\"BT\",\"value\":500},{\"key\":\"JNJ\",\"value\":500},{\"key\":\"USB\",\"value\":500},{\"key\":\"MWV\",\"value\":500},{\"key\":\"GWR\",\"value\":500},{\"key\":\"CIF\",\"value\":500},{\"key\":\"CXE\",\"value\":500},{\"key\":\"NPC\",\"value\":500},{\"key\":\"NAT\",\"value\":500},{\"key\":\"CSP\",\"value\":500},{\"key\":\"CBC\",\"value\":500},{\"key\":\"AA\",\"value\":500},{\"key\":\"FLO\",\"value\":500},{\"key\":\"CBT\",\"value\":499},{\"key\":\"WWE\",\"value\":499},{\"key\":\"GAJ\",\"value\":498},{\"key\":\"MPA\",\"value\":497},{\"key\":\"VVC\",\"value\":497},{\"key\":\"LXP\",\"value\":496},{\"key\":\"IFN\",\"value\":496},{\"key\":\"GHI\",\"value\":496},{\"key\":\"MHO\",\"value\":496},{\"key\":\"SHI\",\"value\":496},{\"key\":\"SGY\",\"value\":496},{\"key\":\"ATR\",\"value\":496},{\"key\":\"BVF\",\"value\":496},{\"key\":\"CBR\",\"value\":496},{\"key\":\"COF\",\"value\":496},{\"key\":\"ELS\",\"value\":496},{\"key\":\"STM\",\"value\":496},{\"key\":\"ETH\",\"value\":496},{\"key\":\"TLB\",\"value\":496},{\"key\":\"KGC\",\"value\":496},{\"key\":\"BFR\",\"value\":496},{\"key\":\"AKS\",\"value\":496},{\"key\":\"CPT\",\"value\":496},{\"key\":\"TAR\",\"value\":496},{\"key\":\"ESI\",\"value\":496},{\"key\":\"BMO\",\"value\":496},{\"key\":\"RC\",\"value\":496},{\"key\":\"HIW\",\"value\":496},{\"key\":\"AEO\",\"value\":496},{\"key\":\"IIT\",\"value\":496},{\"key\":\"TV\",\"value\":496},{\"key\":\"APF\",\"value\":496},{\"key\":\"BKS\",\"value\":496},{\"key\":\"ADC\",\"value\":496},{\"key\":\"TEO\",\"value\":496},{\"key\":\"EQR\",\"value\":496},{\"key\":\"KCP\",\"value\":496},{\"key\":\"MCK\",\"value\":496},{\"key\":\"KNX\",\"value\":496},{\"key\":\"MAD\",\"value\":496},{\"key\":\"RAH\",\"value\":496},{\"key\":\"GDI\",\"value\":496},{\"key\":\"CLI\",\"value\":496},{\"key\":\"OKS\",\"value\":496},{\"key\":\"REG\",\"value\":496},{\"key\":\"KOF\",\"value\":496},{\"key\":\"NFX\",\"value\":496},{\"key\":\"ENI\",\"value\":496},{\"key\":\"KEF\",\"value\":496},{\"key\":\"SKT\",\"value\":496},{\"key\":\"TGS\",\"value\":496},{\"key\":\"MLM\",\"value\":496},{\"key\":\"CYD\",\"value\":496},{\"key\":\"GRR\",\"value\":496},{\"key\":\"RCL\",\"value\":496},{\"key\":\"KEP\",\"value\":496},{\"key\":\"HHS\",\"value\":496},{\"key\":\"PKX\",\"value\":496},{\"key\":\"EOC\",\"value\":496},{\"key\":\"CLP\",\"value\":496},{\"key\":\"BYD\",\"value\":496},{\"key\":\"MAC\",\"value\":496},{\"key\":\"ALY\",\"value\":496},{\"key\":\"PPS\",\"value\":496},{\"key\":\"SLA\",\"value\":496},{\"key\":\"PLT\",\"value\":496},{\"key\":\"AEC\",\"value\":496},{\"key\":\"ALB\",\"value\":496},{\"key\":\"AZN\",\"value\":496},{\"key\":\"XTO\",\"value\":496},{\"key\":\"FR\",\"value\":496},{\"key\":\"RS\",\"value\":496},{\"key\":\"ESC\",\"value\":495},{\"key\":\"CBZ\",\"value\":495},{\"key\":\"STL\",\"value\":495},{\"key\":\"FRE\",\"value\":495},{\"key\":\"TDF\",\"value\":495},{\"key\":\"BJS\",\"value\":495},{\"key\":\"NPX\",\"value\":495},{\"key\":\"MTZ\",\"value\":495},{\"key\":\"GD\",\"value\":495},{\"key\":\"NVO\",\"value\":495},{\"key\":\"TBI\",\"value\":495},{\"key\":\"UNT\",\"value\":495},{\"key\":\"PSB\",\"value\":495},{\"key\":\"LPX\",\"value\":495},{\"key\":\"MYD\",\"value\":495},{\"key\":\"BGG\",\"value\":495},{\"key\":\"ANN\",\"value\":495},{\"key\":\"PGR\",\"value\":495},{\"key\":\"CPE\",\"value\":495},{\"key\":\"NHI\",\"value\":495},{\"key\":\"CBY\",\"value\":495},{\"key\":\"KEY\",\"value\":495},{\"key\":\"TEF\",\"value\":495},{\"key\":\"CHN\",\"value\":495},{\"key\":\"DY\",\"value\":495},{\"key\":\"NUS\",\"value\":495},{\"key\":\"THC\",\"value\":495},{\"key\":\"TTC\",\"value\":495},{\"key\":\"TPC\",\"value\":495},{\"key\":\"NCS\",\"value\":495},{\"key\":\"IQC\",\"value\":495},{\"key\":\"IQM\",\"value\":495},{\"key\":\"BBI\",\"value\":495},{\"key\":\"TDY\",\"value\":495},{\"key\":\"ITG\",\"value\":495},{\"key\":\"TSU\",\"value\":495},{\"key\":\"HOV\",\"value\":495},{\"key\":\"GEO\",\"value\":495},{\"key\":\"HRC\",\"value\":495},{\"key\":\"SWC\",\"value\":495},{\"key\":\"OPY\",\"value\":495},{\"key\":\"GF\",\"value\":495},{\"key\":\"GES\",\"value\":495},{\"key\":\"AOI\",\"value\":495},{\"key\":\"EPD\",\"value\":495},{\"key\":\"NCR\",\"value\":495},{\"key\":\"JNY\",\"value\":495},{\"key\":\"FII\",\"value\":495},{\"key\":\"AMT\",\"value\":495},{\"key\":\"PHI\",\"value\":495},{\"key\":\"MCS\",\"value\":495},{\"key\":\"PX\",\"value\":495},{\"key\":\"PAA\",\"value\":495},{\"key\":\"BNA\",\"value\":495},{\"key\":\"ESE\",\"value\":495},{\"key\":\"PH\",\"value\":495},{\"key\":\"LTC\",\"value\":495},{\"key\":\"DNR\",\"value\":495},{\"key\":\"MAG\",\"value\":495},{\"key\":\"ADI\",\"value\":495},{\"key\":\"CYN\",\"value\":495},{\"key\":\"NX\",\"value\":495},{\"key\":\"RCS\",\"value\":495},{\"key\":\"UHS\",\"value\":495},{\"key\":\"BWS\",\"value\":495},{\"key\":\"BSD\",\"value\":495},{\"key\":\"TNH\",\"value\":495},{\"key\":\"DTF\",\"value\":495},{\"key\":\"NAN\",\"value\":495},{\"key\":\"TCB\",\"value\":495},{\"key\":\"ACI\",\"value\":495},{\"key\":\"GRA\",\"value\":495},{\"key\":\"TSN\",\"value\":495},{\"key\":\"PGI\",\"value\":495},{\"key\":\"MNI\",\"value\":495},{\"key\":\"GCI\",\"value\":495},{\"key\":\"JFC\",\"value\":495},{\"key\":\"GIM\",\"value\":495},{\"key\":\"PCF\",\"value\":495},{\"key\":\"VLY\",\"value\":495},{\"key\":\"IVC\",\"value\":495},{\"key\":\"MFL\",\"value\":495},{\"key\":\"CB\",\"value\":495},{\"key\":\"CEE\",\"value\":495},{\"key\":\"GPI\",\"value\":495},{\"key\":\"ASA\",\"value\":495},{\"key\":\"HAS\",\"value\":495},{\"key\":\"GAP\",\"value\":495},{\"key\":\"NXP\",\"value\":495},{\"key\":\"ASG\",\"value\":495},{\"key\":\"DX\",\"value\":495},{\"key\":\"ARE\",\"value\":495},{\"key\":\"ROS\",\"value\":495},{\"key\":\"SHAW\",\"value\":495},{\"key\":\"NCL\",\"value\":495},{\"key\":\"SVU\",\"value\":495},{\"key\":\"SWZ\",\"value\":495},{\"key\":\"ATW\",\"value\":495},{\"key\":\"TWI\",\"value\":495},{\"key\":\"MT\",\"value\":495},{\"key\":\"KMX\",\"value\":495},{\"key\":\"KEX\",\"value\":495},{\"key\":\"NJR\",\"value\":495},{\"key\":\"DTG\",\"value\":495},{\"key\":\"FCS\",\"value\":495},{\"key\":\"RBC\",\"value\":495},{\"key\":\"BDK\",\"value\":495},{\"key\":\"SGF\",\"value\":495},{\"key\":\"FC\",\"value\":495},{\"key\":\"NPT\",\"value\":495},{\"key\":\"JEQ\",\"value\":495},{\"key\":\"MUS\",\"value\":495},{\"key\":\"PXD\",\"value\":495},{\"key\":\"TM\",\"value\":495},{\"key\":\"AGL\",\"value\":495},{\"key\":\"HNI\",\"value\":495},{\"key\":\"KID\",\"value\":495},{\"key\":\"CNL\",\"value\":495},{\"key\":\"CXH\",\"value\":495},{\"key\":\"OHI\",\"value\":495},{\"key\":\"CVH\",\"value\":495},{\"key\":\"COG\",\"value\":495},{\"key\":\"CVD\",\"value\":495},{\"key\":\"GUT\",\"value\":495},{\"key\":\"CHD\",\"value\":495},{\"key\":\"EAT\",\"value\":495},{\"key\":\"SRT\",\"value\":495},{\"key\":\"JOF\",\"value\":495},{\"key\":\"AVP\",\"value\":495},{\"key\":\"CKH\",\"value\":495},{\"key\":\"PNW\",\"value\":495},{\"key\":\"CYT\",\"value\":495},{\"key\":\"POT\",\"value\":495},{\"key\":\"PPR\",\"value\":495},{\"key\":\"CEA\",\"value\":495},{\"key\":\"NNC\",\"value\":495},{\"key\":\"ASF\",\"value\":495},{\"key\":\"MMT\",\"value\":495},{\"key\":\"KMB\",\"value\":495},{\"key\":\"KST\",\"value\":495},{\"key\":\"HQH\",\"value\":495},{\"key\":\"NCA\",\"value\":495},{\"key\":\"HXL\",\"value\":495},{\"key\":\"MFM\",\"value\":495},{\"key\":\"APH\",\"value\":495},{\"key\":\"GRB\",\"value\":495},{\"key\":\"CQB\",\"value\":495},{\"key\":\"CTV\",\"value\":495},{\"key\":\"CHB\",\"value\":495},{\"key\":\"BYI\",\"value\":495},{\"key\":\"CBE\",\"value\":495},{\"key\":\"IEX\",\"value\":495},{\"key\":\"CDE\",\"value\":495},{\"key\":\"GTC\",\"value\":495},{\"key\":\"NAV\",\"value\":495},{\"key\":\"KRC\",\"value\":495},{\"key\":\"MD\",\"value\":495},{\"key\":\"CTL\",\"value\":495},{\"key\":\"OLN\",\"value\":495},{\"key\":\"FST\",\"value\":495},{\"key\":\"KHI\",\"value\":495},{\"key\":\"SO\",\"value\":495},{\"key\":\"CIA\",\"value\":495},{\"key\":\"SPW\",\"value\":495},{\"key\":\"SXI\",\"value\":495},{\"key\":\"APU\",\"value\":495},{\"key\":\"UPS\",\"value\":495},{\"key\":\"MTW\",\"value\":495},{\"key\":\"PCP\",\"value\":495},{\"key\":\"OME\",\"value\":495},{\"key\":\"GET\",\"value\":495},{\"key\":\"IP\",\"value\":495},{\"key\":\"PTV\",\"value\":495},{\"key\":\"NCP\",\"value\":495},{\"key\":\"HQL\",\"value\":495},{\"key\":\"OIC\",\"value\":495},{\"key\":\"AIN\",\"value\":495},{\"key\":\"MUR\",\"value\":495},{\"key\":\"BXP\",\"value\":495},{\"key\":\"RGS\",\"value\":495},{\"key\":\"HRS\",\"value\":495},{\"key\":\"FLS\",\"value\":495},{\"key\":\"CM\",\"value\":495},{\"key\":\"VRX\",\"value\":495},{\"key\":\"CEC\",\"value\":495},{\"key\":\"CKR\",\"value\":495},{\"key\":\"CLS\",\"value\":495},{\"key\":\"NQC\",\"value\":495},{\"key\":\"TREX\",\"value\":495},{\"key\":\"CHE\",\"value\":495},{\"key\":\"MQY\",\"value\":495},{\"key\":\"FMS\",\"value\":495},{\"key\":\"ELP\",\"value\":495},{\"key\":\"GCV\",\"value\":495},{\"key\":\"RMT\",\"value\":495},{\"key\":\"GAS\",\"value\":495},{\"key\":\"GBL\",\"value\":495},{\"key\":\"OCN\",\"value\":495},{\"key\":\"DEL\",\"value\":495},{\"key\":\"ENZ\",\"value\":495},{\"key\":\"SLG\",\"value\":495},{\"key\":\"IRL\",\"value\":495},{\"key\":\"BDC\",\"value\":495},{\"key\":\"PHM\",\"value\":495},{\"key\":\"KSU\",\"value\":495},{\"key\":\"ETM\",\"value\":495},{\"key\":\"NMA\",\"value\":495},{\"key\":\"COY\",\"value\":495},{\"key\":\"PPG\",\"value\":495},{\"key\":\"SUG\",\"value\":495},{\"key\":\"DFG\",\"value\":495},{\"key\":\"TSS\",\"value\":495},{\"key\":\"SAH\",\"value\":495},{\"key\":\"ARJ\",\"value\":495},{\"key\":\"NPF\",\"value\":495},{\"key\":\"RWT\",\"value\":495},{\"key\":\"GGC\",\"value\":495},{\"key\":\"PBG\",\"value\":495},{\"key\":\"DEO\",\"value\":495},{\"key\":\"PRE\",\"value\":495},{\"key\":\"OIA\",\"value\":495},{\"key\":\"NQP\",\"value\":495},{\"key\":\"EGN\",\"value\":495},{\"key\":\"UFI\",\"value\":495},{\"key\":\"SWM\",\"value\":495},{\"key\":\"SCI\",\"value\":495},{\"key\":\"CNI\",\"value\":495},{\"key\":\"SHS\",\"value\":495},{\"key\":\"HZO\",\"value\":495},{\"key\":\"MCI\",\"value\":495},{\"key\":\"ID\",\"value\":495},{\"key\":\"FMC\",\"value\":495},{\"key\":\"TSP\",\"value\":495},{\"key\":\"MVL\",\"value\":495},{\"key\":\"RAD\",\"value\":495},{\"key\":\"IR\",\"value\":495},{\"key\":\"EP\",\"value\":495},{\"key\":\"AGN\",\"value\":495},{\"key\":\"IQT\",\"value\":495},{\"key\":\"CRY\",\"value\":495},{\"key\":\"PNY\",\"value\":495},{\"key\":\"BID\",\"value\":495},{\"key\":\"AWF\",\"value\":495},{\"key\":\"LLL\",\"value\":495},{\"key\":\"UGP\",\"value\":495},{\"key\":\"PCL\",\"value\":495},{\"key\":\"CHH\",\"value\":495},{\"key\":\"BIO\",\"value\":495},{\"key\":\"AMG\",\"value\":495},{\"key\":\"SPF\",\"value\":495},{\"key\":\"TRH\",\"value\":495},{\"key\":\"PBY\",\"value\":495},{\"key\":\"STE\",\"value\":495},{\"key\":\"SUP\",\"value\":495},{\"key\":\"PEG\",\"value\":495},{\"key\":\"DRI\",\"value\":495},{\"key\":\"MIL\",\"value\":495},{\"key\":\"FO\",\"value\":495},{\"key\":\"MAN\",\"value\":495},{\"key\":\"MHK\",\"value\":495},{\"key\":\"RCI\",\"value\":495},{\"key\":\"TRR\",\"value\":495},{\"key\":\"TCH\",\"value\":495},{\"key\":\"DLM\",\"value\":495},{\"key\":\"LNC\",\"value\":495},{\"key\":\"BPL\",\"value\":495},{\"key\":\"FUN\",\"value\":495},{\"key\":\"MFC\",\"value\":495},{\"key\":\"AI\",\"value\":495},{\"key\":\"AGM\",\"value\":495},{\"key\":\"CSC\",\"value\":495},{\"key\":\"GCH\",\"value\":495},{\"key\":\"AVB\",\"value\":495},{\"key\":\"DCO\",\"value\":495},{\"key\":\"EQY\",\"value\":495},{\"key\":\"HAE\",\"value\":495},{\"key\":\"NQU\",\"value\":495},{\"key\":\"ECL\",\"value\":495},{\"key\":\"TY\",\"value\":495},{\"key\":\"BKN\",\"value\":495},{\"key\":\"NXR\",\"value\":495},{\"key\":\"ELY\",\"value\":495},{\"key\":\"TRF\",\"value\":495},{\"key\":\"MPS\",\"value\":495},{\"key\":\"DE\",\"value\":495},{\"key\":\"CY\",\"value\":495},{\"key\":\"HST\",\"value\":495},{\"key\":\"DPL\",\"value\":495},{\"key\":\"MQT\",\"value\":495},{\"key\":\"NMY\",\"value\":495},{\"key\":\"RFI\",\"value\":495},{\"key\":\"HAL\",\"value\":495},{\"key\":\"CVS\",\"value\":495},{\"key\":\"UVV\",\"value\":495},{\"key\":\"WCC\",\"value\":495},{\"key\":\"NBL\",\"value\":495},{\"key\":\"PEO\",\"value\":495},{\"key\":\"PPM\",\"value\":495},{\"key\":\"CLC\",\"value\":495},{\"key\":\"GMT\",\"value\":495},{\"key\":\"NYT\",\"value\":495},{\"key\":\"DGF\",\"value\":495},{\"key\":\"LGF\",\"value\":495},{\"key\":\"BDX\",\"value\":495},{\"key\":\"CHL\",\"value\":495},{\"key\":\"NWL\",\"value\":495},{\"key\":\"HMA\",\"value\":495},{\"key\":\"FBP\",\"value\":495},{\"key\":\"KT\",\"value\":495},{\"key\":\"PCH\",\"value\":495},{\"key\":\"SHW\",\"value\":495},{\"key\":\"HOT\",\"value\":495},{\"key\":\"GS\",\"value\":495},{\"key\":\"NHP\",\"value\":495},{\"key\":\"CLF\",\"value\":495},{\"key\":\"TTF\",\"value\":495},{\"key\":\"NSC\",\"value\":495},{\"key\":\"TEX\",\"value\":495},{\"key\":\"SKY\",\"value\":495},{\"key\":\"MTX\",\"value\":495},{\"key\":\"AAN\",\"value\":495},{\"key\":\"EGY\",\"value\":495},{\"key\":\"MPV\",\"value\":495},{\"key\":\"TRV\",\"value\":495},{\"key\":\"SLE\",\"value\":495},{\"key\":\"IMS\",\"value\":495},{\"key\":\"FDP\",\"value\":495},{\"key\":\"LHO\",\"value\":495},{\"key\":\"NR\",\"value\":495},{\"key\":\"EQS\",\"value\":495},{\"key\":\"BLT\",\"value\":495},{\"key\":\"RY\",\"value\":495},{\"key\":\"DIN\",\"value\":495},{\"key\":\"NUV\",\"value\":495},{\"key\":\"PMI\",\"value\":495},{\"key\":\"TVE\",\"value\":495},{\"key\":\"PAG\",\"value\":495},{\"key\":\"RDK\",\"value\":495},{\"key\":\"ODP\",\"value\":495},{\"key\":\"TRA\",\"value\":495},{\"key\":\"NVR\",\"value\":495},{\"key\":\"ICB\",\"value\":495},{\"key\":\"SEH\",\"value\":495},{\"key\":\"LDL\",\"value\":495},{\"key\":\"NUO\",\"value\":495},{\"key\":\"MMU\",\"value\":495},{\"key\":\"LTD\",\"value\":495},{\"key\":\"RDN\",\"value\":495},{\"key\":\"BGP\",\"value\":495},{\"key\":\"GFF\",\"value\":495},{\"key\":\"NC\",\"value\":495},{\"key\":\"MIN\",\"value\":495},{\"key\":\"RT\",\"value\":495},{\"key\":\"BEC\",\"value\":495},{\"key\":\"GY\",\"value\":495},{\"key\":\"IFF\",\"value\":495},{\"key\":\"ATI\",\"value\":495},{\"key\":\"DST\",\"value\":495},{\"key\":\"IHR\",\"value\":495},{\"key\":\"SWN\",\"value\":495},{\"key\":\"TGI\",\"value\":495},{\"key\":\"SRZ\",\"value\":495},{\"key\":\"NPP\",\"value\":495},{\"key\":\"FDO\",\"value\":495},{\"key\":\"CHG\",\"value\":495},{\"key\":\"MAT\",\"value\":495},{\"key\":\"CNX\",\"value\":495},{\"key\":\"ETP\",\"value\":495},{\"key\":\"PDE\",\"value\":495},{\"key\":\"MSO\",\"value\":495},{\"key\":\"NDN\",\"value\":495},{\"key\":\"NL\",\"value\":495},{\"key\":\"MGB\",\"value\":495},{\"key\":\"MVT\",\"value\":495},{\"key\":\"MTS\",\"value\":495},{\"key\":\"CKP\",\"value\":495},{\"key\":\"JCP\",\"value\":495},{\"key\":\"BPT\",\"value\":495},{\"key\":\"CL\",\"value\":495},{\"key\":\"KIM\",\"value\":495},{\"key\":\"OMG\",\"value\":495},{\"key\":\"PCG\",\"value\":495},{\"key\":\"RTP\",\"value\":495},{\"key\":\"BVN\",\"value\":495},{\"key\":\"MUH\",\"value\":495},{\"key\":\"CCK\",\"value\":495},{\"key\":\"WTR\",\"value\":495},{\"key\":\"SYX\",\"value\":495},{\"key\":\"BCE\",\"value\":495},{\"key\":\"EQT\",\"value\":495},{\"key\":\"CPY\",\"value\":495},{\"key\":\"ARG\",\"value\":495},{\"key\":\"MYI\",\"value\":495},{\"key\":\"EL\",\"value\":495},{\"key\":\"PLL\",\"value\":495},{\"key\":\"NPK\",\"value\":495},{\"key\":\"FF\",\"value\":495},{\"key\":\"UIS\",\"value\":495},{\"key\":\"NNP\",\"value\":495},{\"key\":\"MTG\",\"value\":495},{\"key\":\"EDE\",\"value\":495},{\"key\":\"CVO\",\"value\":495},{\"key\":\"TEI\",\"value\":495},{\"key\":\"MFV\",\"value\":495},{\"key\":\"IMN\",\"value\":495},{\"key\":\"SGA\",\"value\":495},{\"key\":\"FMX\",\"value\":495},{\"key\":\"EMF\",\"value\":495},{\"key\":\"RAI\",\"value\":495},{\"key\":\"HLS\",\"value\":495},{\"key\":\"DHF\",\"value\":495},{\"key\":\"NUN\",\"value\":495},{\"key\":\"MYM\",\"value\":495},{\"key\":\"CGI\",\"value\":495},{\"key\":\"KDN\",\"value\":495},{\"key\":\"HE\",\"value\":495},{\"key\":\"HCC\",\"value\":495},{\"key\":\"ICA\",\"value\":495},{\"key\":\"OIB\",\"value\":495},{\"key\":\"SFY\",\"value\":495}]"
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 14424
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 651.5
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 27.739350093732
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 22551786.493353084
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_high", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.00 to 65.15\",\"low\":\"0.00\",\"idx\":0,\"value\":763396,\"high\":\"65.15\"},{\"key\":\"65.15 to 130.30\",\"low\":\"65.15\",\"idx\":1,\"value\":43454,\"high\":\"130.30\"},{\"key\":\"130.30 to 195.45\",\"low\":\"130.30\",\"idx\":2,\"value\":3697,\"high\":\"195.45\"},{\"key\":\"195.45 to 260.60\",\"low\":\"195.45\",\"idx\":3,\"value\":819,\"high\":\"260.60\"},{\"key\":\"260.60 to 325.75\",\"low\":\"260.60\",\"idx\":4,\"value\":485,\"high\":\"325.75\"},{\"key\":\"325.75 to 390.90\",\"low\":\"325.75\",\"idx\":5,\"value\":225,\"high\":\"390.90\"},{\"key\":\"390.90 to 456.05\",\"low\":\"390.90\",\"idx\":6,\"value\":177,\"high\":\"456.05\"},{\"key\":\"456.05 to 521.20\",\"low\":\"456.05\",\"idx\":7,\"value\":416,\"high\":\"521.20\"},{\"key\":\"521.20 to 586.35\",\"low\":\"521.20\",\"idx\":8,\"value\":189,\"high\":\"586.35\"},{\"key\":\"586.35 to 651.50\",\"low\":\"586.35\",\"idx\":9,\"value\":131,\"high\":\"651.50\"}]"
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 1
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "max_length", 
+        "table": "test_nyse_stocks", 
+        "value": 4
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "min_length", 
+        "table": "test_nyse_stocks", 
+        "value": 4
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "avg_length", 
+        "table": "test_nyse_stocks", 
+        "value": 4.0
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "empties", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "string", 
+        "database": "default", 
+        "field": "exchge", 
+        "profileKind": "countfreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"NYSE\",\"value\":812989}]"
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 519
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 1009774800000
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 946875600000
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "empties", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "annual", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"year\":\"2000\",\"count\":396071},{\"year\":\"2001\",\"count\":416918}]"
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "monthly", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"year\":\"2000\",\"month\":1,\"count\":31072},{\"year\":\"2000\",\"month\":2,\"count\":30102},{\"year\":\"2000\",\"month\":3,\"count\":35827},{\"year\":\"2000\",\"month\":4,\"count\":29716},{\"year\":\"2000\",\"month\":5,\"count\":34303},{\"year\":\"2000\",\"month\":6,\"count\":32616},{\"year\":\"2000\",\"month\":7,\"count\":32087},{\"year\":\"2000\",\"month\":8,\"count\":35024},{\"year\":\"2000\",\"month\":9,\"count\":32412},{\"year\":\"2000\",\"month\":10,\"count\":35840},{\"year\":\"2000\",\"month\":11,\"count\":34331},{\"year\":\"2000\",\"month\":12,\"count\":32741},{\"year\":\"2001\",\"month\":1,\"count\":34417},{\"year\":\"2001\",\"month\":2,\"count\":31210},{\"year\":\"2001\",\"month\":3,\"count\":36292},{\"year\":\"2001\",\"month\":4,\"count\":33092},{\"year\":\"2001\",\"month\":5,\"count\":36596},{\"year\":\"2001\",\"month\":6,\"count\":35163},{\"year\":\"2001\",\"month\":7,\"count\":35414},{\"year\":\"2001\",\"month\":8,\"count\":39126},{\"year\":\"2001\",\"month\":9,\"count\":25580},{\"year\":\"2001\",\"month\":10,\"count\":39293},{\"year\":\"2001\",\"month\":11,\"count\":36093},{\"year\":\"2001\",\"month\":12,\"count\":34642}]"
+    }, 
+    {
+        "dataType": "date", 
+        "database": "default", 
+        "field": "date", 
+        "profileKind": "countfreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"2001-12-28\",\"value\":1734},{\"key\":\"2001-12-27\",\"value\":1734},{\"key\":\"2001-12-31\",\"value\":1734},{\"key\":\"2001-12-18\",\"value\":1733},{\"key\":\"2001-12-24\",\"value\":1733},{\"key\":\"2001-12-26\",\"value\":1733},{\"key\":\"2001-12-20\",\"value\":1733},{\"key\":\"2001-12-19\",\"value\":1733},{\"key\":\"2001-12-21\",\"value\":1733},{\"key\":\"2001-12-14\",\"value\":1732},{\"key\":\"2001-12-17\",\"value\":1732},{\"key\":\"2001-12-13\",\"value\":1731},{\"key\":\"2001-12-06\",\"value\":1731},{\"key\":\"2001-12-10\",\"value\":1731},{\"key\":\"2001-12-05\",\"value\":1731},{\"key\":\"2001-12-12\",\"value\":1731},{\"key\":\"2001-12-07\",\"value\":1731},{\"key\":\"2001-12-11\",\"value\":1731},{\"key\":\"2001-12-04\",\"value\":1731},{\"key\":\"2001-12-03\",\"value\":1729},{\"key\":\"2001-11-29\",\"value\":1728},{\"key\":\"2001-11-30\",\"value\":1728},{\"key\":\"2001-11-28\",\"value\":1727},{\"key\":\"2001-11-26\",\"value\":1726},{\"key\":\"2001-11-27\",\"value\":1726},{\"key\":\"2001-11-21\",\"value\":1720},{\"key\":\"2001-11-23\",\"value\":1720},{\"key\":\"2001-11-20\",\"value\":1720},{\"key\":\"2001-11-19\",\"value\":1719},{\"key\":\"2001-11-16\",\"value\":1717},{\"key\":\"2001-11-15\",\"value\":1717},{\"key\":\"2001-11-14\",\"value\":1716},{\"key\":\"2001-11-12\",\"value\":1715},{\"key\":\"2001-11-13\",\"value\":1715},{\"key\":\"2001-11-07\",\"value\":1714},{\"key\":\"2001-11-06\",\"value\":1714},{\"key\":\"2001-11-01\",\"value\":1714},{\"key\":\"2001-11-09\",\"value\":1714},{\"key\":\"2001-11-05\",\"value\":1714},{\"key\":\"2001-11-02\",\"value\":1714},{\"key\":\"2001-11-08\",\"value\":1714},{\"key\":\"2001-10-31\",\"value\":1713},{\"key\":\"2001-10-30\",\"value\":1713},{\"key\":\"2001-10-29\",\"value\":1712},{\"key\":\"2001-10-26\",\"value\":1712},{\"key\":\"2001-10-25\",\"value\":1711},{\"key\":\"2001-10-24\",\"value\":1711},{\"key\":\"2001-10-23\",\"value\":1711},{\"key\":\"2001-10-19\",\"value\":1709},{\"key\":\"2001-10-17\",\"value\":1709},{\"key\":\"2001-10-22\",\"value\":1709},{\"key\":\"2001-10-16\",\"value\":1709},{\"key\":\"2001-10-18\",\"value\":1709},{\"key\":\"2001-10-15\",\"value\":1709},{\"key\":\"2001-10-12\",\"value\":1707},{\"key\":\"2001-10-10\",\"value\":1706},{\"key\":\"2001-10-09\",\"value\":1706},{\"key\":\"2001-10-08\",\"value\":1706},{\"key\":\"2001-10-11\",\"value\":1706},{\"key\":\"2001-09-06\",\"value\":1705},{\"key\":\"2001-09-05\",\"value\":1705},{\"key\":\"2001-10-03\",\"value\":1705},{\"key\":\"2001-10-02\",\"value\":1705},{\"key\":\"2001-09-26\",\"value\":1705},{\"key\":\"2001-10-05\",\"value\":1705},{\"key\":\"2001-09-07\",\"value\":1705},{\"key\":\"2001-09-24\",\"value\":1705},{\"key\":\"2001-09-20\",\"value\":1705},{\"key\":\"2001-09-18\",\"value\":1705},{\"key\":\"2001-09-25\",\"value\":1705},{\"key\":\"2001-09-17\",\"value\":1705},{\"key\":\"2001-09-28\",\"value\":1705},{\"key\":\"2001-10-04\",\"value\":1705},{\"key\":\"2001-09-27\",\"value\":1705},{\"key\":\"2001-09-10\",\"value\":1705},{\"key\":\"2001-09-21\",\"value\":1705},{\"key\":\"2001-10-01\",\"value\":1705},{\"key\":\"2001-09-19\",\"value\":1705},{\"key\":\"2001-09-04\",\"value\":1705},{\"key\":\"2001-08-29\",\"value\":1704},{\"key\":\"2001-08-27\",\"value\":1704},{\"key\":\"2001-08-31\",\"value\":1704},{\"key\":\"2001-08-28\",\"value\":1704},{\"key\":\"2001-08-30\",\"value\":1704},{\"key\":\"2001-08-21\",\"value\":1702},{\"key\":\"2001-08-23\",\"value\":1702},{\"key\":\"2001-08-22\",\"value\":1702},{\"key\":\"2001-08-20\",\"value\":1702},{\"key\":\"2001-08-24\",\"value\":1702},{\"key\":\"2001-08-15\",\"value\":1701},{\"key\":\"2001-08-10\",\"value\":1701},{\"key\":\"2001-08-13\",\"value\":1701},{\"key\":\"2001-08-17\",\"value\":1701},{\"key\":\"2001-08-16\",\"value\":1701},{\"key\":\"2001-08-14\",\"value\":1701},{\"key\":\"2001-08-09\",\"value\":1700},{\"key\":\"2001-08-07\",\"value\":1699},{\"key\":\"2001-08-08\",\"value\":1699},{\"key\":\"2001-08-01\",\"value\":1698},{\"key\":\"2001-08-06\",\"value\":1698},{\"key\":\"2001-08-03\",\"value\":1698},{\"key\":\"2001-08-02\",\"value\":1698},{\"key\":\"2001-07-31\",\"value\":1696},{\"key\":\"2001-07-30\",\"value\":1696},{\"key\":\"2001-07-24\",\"value\":1691},{\"key\":\"2001-07-27\",\"value\":1691},{\"key\":\"2001-07-25\",\"value\":1691},{\"key\":\"2001-07-23\",\"value\":1691},{\"key\":\"2001-07-20\",\"value\":1689},{\"key\":\"2001-07-17\",\"value\":1686},{\"key\":\"2001-07-18\",\"value\":1686},{\"key\":\"2001-07-19\",\"value\":1686},{\"key\":\"2001-07-13\",\"value\":1684},{\"key\":\"2001-07-16\",\"value\":1684},{\"key\":\"2001-07-12\",\"value\":1684},{\"key\":\"2001-07-11\",\"value\":1684},{\"key\":\"2001-07-26\",\"value\":1683},{\"key\":\"2001-07-09\",\"value\":1682},{\"key\":\"2001-07-05\",\"value\":1682},{\"key\":\"2001-07-06\",\"value\":1682},{\"key\":\"2001-07-10\",\"value\":1682},{\"key\":\"2001-07-03\",\"value\":1682},{\"key\":\"2001-06-29\",\"value\":1681},{\"key\":\"2001-07-02\",\"value\":1681},{\"key\":\"2001-06-28\",\"value\":1680},{\"key\":\"2001-06-21\",\"value\":1677},{\"key\":\"2001-06-20\",\"value\":1677},{\"key\":\"2001-06-25\",\"value\":1677},{\"key\":\"2001-06-27\",\"value\":1677},{\"key\":\"2001-06-22\",\"value\":1677},{\"key\":\"2001-06-26\",\"value\":1677},{\"key\":\"2001-06-19\",\"value\":1676},{\"key\":\"2001-06-18\",\"value\":1676},{\"key\":\"2001-06-14\",\"value\":1674},{\"key\":\"2001-06-15\",\"value\":1674},{\"key\":\"2001-06-13\",\"value\":1672},{\"key\":\"2001-06-04\",\"value\":1671},{\"key\":\"2001-06-05\",\"value\":1671},{\"key\":\"2001-06-11\",\"value\":1671},{\"key\":\"2001-05-29\",\"value\":1671},{\"key\":\"2001-06-01\",\"value\":1671},{\"key\":\"2001-06-12\",\"value\":1671},{\"key\":\"2001-06-07\",\"value\":1671},{\"key\":\"2001-05-30\",\"value\":1671},{\"key\":\"2001-06-06\",\"value\":1671},{\"key\":\"2001-06-08\",\"value\":1671},{\"key\":\"2001-05-31\",\"value\":1671},{\"key\":\"2001-05-25\",\"value\":1670},{\"key\":\"2001-05-23\",\"value\":1670},{\"key\":\"2001-05-24\",\"value\":1670},{\"key\":\"2001-05-22\",\"value\":1669},{\"key\":\"2001-05-21\",\"value\":1668},{\"key\":\"2001-05-18\",\"value\":1667},{\"key\":\"2001-05-17\",\"value\":1665},{\"key\":\"2001-05-16\",\"value\":1664},{\"key\":\"2001-05-14\",\"value\":1662},{\"key\":\"2001-05-11\",\"value\":1662},{\"key\":\"2001-05-15\",\"value\":1662},{\"key\":\"2001-05-10\",\"value\":1661},{\"key\":\"2001-05-09\",\"value\":1660},{\"key\":\"2001-05-08\",\"value\":1660},{\"key\":\"2001-05-02\",\"value\":1660},{\"key\":\"2001-05-03\",\"value\":1660},{\"key\":\"2001-05-04\",\"value\":1660},{\"key\":\"2001-04-27\",\"value\":1659},{\"key\":\"2001-05-01\",\"value\":1659},{\"key\":\"2001-04-26\",\"value\":1658},{\"key\":\"2001-04-23\",\"value\":1658},{\"key\":\"2001-04-24\",\"value\":1658},{\"key\":\"2001-04-25\",\"value\":1658},{\"key\":\"2001-04-20\",\"value\":1658},{\"key\":\"2001-04-19\",\"value\":1657},{\"key\":\"2001-04-18\",\"value\":1656},{\"key\":\"2001-04-12\",\"value\":1656},{\"key\":\"2001-04-17\",\"value\":1656},{\"key\":\"2001-04-16\",\"value\":1656},{\"key\":\"2001-04-10\",\"value\":1655},{\"key\":\"2001-04-11\",\"value\":1655},{\"key\":\"2001-04-09\",\"value\":1654},{\"key\":\"2001-04-06\",\"value\":1654},{\"key\":\"2001-04-02\",\"value\":1653},{\"key\":\"2001-03-22\",\"value\":1653},{\"key\":\"2001-03-20\",\"value\":1653},{\"key\":\"2001-04-03\",\"value\":1653},{\"key\":\"2001-03-28\",\"value\":1653},{\"key\":\"2001-03-29\",\"value\":1653},{\"key\":\"2001-04-04\",\"value\":1653},{\"key\":\"2001-03-27\",\"value\":1653},{\"key\":\"2001-03-23\",\"value\":1653},{\"key\":\"2001-03-30\",\"value\":1653},{\"key\":\"2001-03-26\",\"value\":1653},{\"key\":\"2001-04-05\",\"value\":1653},{\"key\":\"2001-03-21\",\"value\":1653},{\"key\":\"2001-03-19\",\"value\":1651},{\"key\":\"2001-03-16\",\"value\":1650},{\"key\":\"2001-03-15\",\"value\":1649},{\"key\":\"2001-03-13\",\"value\":1648},{\"key\":\"2001-03-12\",\"value\":1648},{\"key\":\"2001-03-14\",\"value\":1648},{\"key\":\"2001-03-07\",\"value\":1646},{\"key\":\"2001-03-02\",\"value\":1646},{\"key\":\"2001-03-08\",\"value\":1646},{\"key\":\"2001-03-06\",\"value\":1646},{\"key\":\"2001-03-09\",\"value\":1646},{\"key\":\"2001-03-05\",\"value\":1646},{\"key\":\"2001-02-28\",\"value\":1645},{\"key\":\"2001-02-15\",\"value\":1645},{\"key\":\"2001-03-01\",\"value\":1645},{\"key\":\"2001-02-23\",\"value\":1645},{\"key\":\"2001-02-21\",\"value\":1645},{\"key\":\"2001-02-26\",\"value\":1645},{\"key\":\"2001-02-22\",\"value\":1645},{\"key\":\"2001-02-20\",\"value\":1645},{\"key\":\"2001-02-27\",\"value\":1645},{\"key\":\"2001-02-16\",\"value\":1644},{\"key\":\"2001-02-14\",\"value\":1643},{\"key\":\"2001-02-13\",\"value\":1642},{\"key\":\"2001-02-05\",\"value\":1640},{\"key\":\"2001-01-23\",\"value\":1640},{\"key\":\"2001-01-29\",\"value\":1640},{\"key\":\"2001-01-31\",\"value\":1640},{\"key\":\"2001-02-02\",\"value\":1640},{\"key\":\"2001-01-25\",\"value\":1640},{\"key\":\"2001-02-12\",\"value\":1640},{\"key\":\"2001-02-01\",\"value\":1640},{\"key\":\"2001-02-06\",\"value\":1640},{\"key\":\"2001-02-07\",\"value\":1640},{\"key\":\"2001-01-24\",\"value\":1640},{\"key\":\"2001-01-30\",\"value\":1640},{\"key\":\"2001-02-08\",\"value\":1640},{\"key\":\"2001-01-26\",\"value\":1640},{\"key\":\"2001-02-09\",\"value\":1640},{\"key\":\"2001-01-22\",\"value\":1639},{\"key\":\"2001-01-18\",\"value\":1639},{\"key\":\"2001-01-19\",\"value\":1639},{\"key\":\"2000-12-22\",\"value\":1638},{\"key\":\"2000-12-27\",\"value\":1638},{\"key\":\"2000-12-28\",\"value\":1638},{\"key\":\"2000-12-29\",\"value\":1638},{\"key\":\"2001-01-09\",\"value\":1638},{\"key\":\"2001-01-03\",\"value\":1638},{\"key\":\"2001-01-12\",\"value\":1638},{\"key\":\"2001-01-10\",\"value\":1638},{\"key\":\"2000-12-26\",\"value\":1638},{\"key\":\"2001-01-17\",\"value\":1638},{\"key\":\"2001-01-02\",\"value\":1638},{\"key\":\"2001-01-04\",\"value\":1638},{\"key\":\"2001-01-16\",\"value\":1638},{\"key\":\"2001-01-11\",\"value\":1638},{\"key\":\"2001-01-08\",\"value\":1638},{\"key\":\"2001-01-05\",\"value\":1638},{\"key\":\"2000-12-18\",\"value\":1637},{\"key\":\"2000-12-14\",\"value\":1637},{\"key\":\"2000-12-15\",\"value\":1637},{\"key\":\"2000-12-11\",\"value\":1637},{\"key\":\"2000-12-20\",\"value\":1637},{\"key\":\"2000-12-12\",\"value\":1637},{\"key\":\"2000-12-19\",\"value\":1637},{\"key\":\"2000-12-21\",\"value\":1637},{\"key\":\"2000-12-08\",\"value\":1637},{\"key\":\"2000-12-13\",\"value\":1637},{\"key\":\"2000-11-21\",\"value\":1636},{\"key\":\"2000-11-30\",\"value\":1636},{\"key\":\"2000-11-20\",\"value\":1636},{\"key\":\"2000-12-05\",\"value\":1636},{\"key\":\"2000-12-06\",\"value\":1636},{\"key\":\"2000-11-28\",\"value\":1636},{\"key\":\"2000-11-17\",\"value\":1636},{\"key\":\"2000-11-24\",\"value\":1636},{\"key\":\"2000-12-01\",\"value\":1636},{\"key\":\"2000-11-29\",\"value\":1636},{\"key\":\"2000-11-22\",\"value\":1636},{\"key\":\"2000-12-07\",\"value\":1636},{\"key\":\"2000-12-04\",\"value\":1636},{\"key\":\"2000-11-27\",\"value\":1636},{\"key\":\"2000-11-16\",\"value\":1635},{\"key\":\"2000-11-15\",\"value\":1635},{\"key\":\"2000-11-09\",\"value\":1634},{\"key\":\"2000-11-08\",\"value\":1634},{\"key\":\"2000-11-10\",\"value\":1634},{\"key\":\"2000-11-13\",\"value\":1634},{\"key\":\"2000-11-07\",\"value\":1634},{\"key\":\"2000-11-14\",\"value\":1634},{\"key\":\"2000-10-26\",\"value\":1633},{\"key\":\"2000-10-27\",\"value\":1633},{\"key\":\"2000-10-24\",\"value\":1633},{\"key\":\"2000-11-03\",\"value\":1633},{\"key\":\"2000-11-02\",\"value\":1633},{\"key\":\"2000-10-25\",\"value\":1633},{\"key\":\"2000-11-06\",\"value\":1633},{\"key\":\"2000-10-31\",\"value\":1633},{\"key\":\"2001-05-07\",\"value\":1633},{\"key\":\"2000-10-30\",\"value\":1633},{\"key\":\"2000-11-01\",\"value\":1633},{\"key\":\"2000-10-20\",\"value\":1632},{\"key\":\"2000-10-23\",\"value\":1632},{\"key\":\"2000-10-19\",\"value\":1631},{\"key\":\"2001-04-30\",\"value\":1631},{\"key\":\"2000-10-17\",\"value\":1629},{\"key\":\"2000-10-18\",\"value\":1629},{\"key\":\"2000-10-16\",\"value\":1627},{\"key\":\"2000-10-12\",\"value\":1627},{\"key\":\"2000-10-11\",\"value\":1627},{\"key\":\"2000-10-13\",\"value\":1627},{\"key\":\"2000-10-06\",\"value\":1627},{\"key\":\"2000-10-10\",\"value\":1627},{\"key\":\"2000-10-09\",\"value\":1627},{\"key\":\"2000-10-05\",\"value\":1626},{\"key\":\"2000-10-04\",\"value\":1626},{\"key\":\"2000-10-03\",\"value\":1624},{\"key\":\"2000-10-02\",\"value\":1624},{\"key\":\"2000-09-29\",\"value\":1623},{\"key\":\"2000-09-27\",\"value\":1622},{\"key\":\"2000-09-20\",\"value\":1622},{\"key\":\"2000-09-26\",\"value\":1622},{\"key\":\"2000-09-28\",\"value\":1622},{\"key\":\"2000-09-25\",\"value\":1622},{\"key\":\"2000-09-21\",\"value\":1622},{\"key\":\"2000-09-22\",\"value\":1622},{\"key\":\"2000-09-18\",\"value\":1621},{\"key\":\"2000-09-19\",\"value\":1621},{\"key\":\"2000-09-15\",\"value\":1621},{\"key\":\"2000-09-14\",\"value\":1620},{\"key\":\"2000-09-06\",\"value\":1619},{\"key\":\"2000-09-05\",\"value\":1619},{\"key\":\"2000-09-13\",\"value\":1619},{\"key\":\"2000-09-08\",\"value\":1619},{\"key\":\"2000-09-07\",\"value\":1619},{\"key\":\"2000-09-12\",\"value\":1619},{\"key\":\"2000-09-11\",\"value\":1619},{\"key\":\"2000-08-30\",\"value\":1618},{\"key\":\"2000-08-31\",\"value\":1618},{\"key\":\"2000-09-01\",\"value\":1618},{\"key\":\"2000-08-21\",\"value\":1617},{\"key\":\"2000-08-22\",\"value\":1617},{\"key\":\"2000-08-16\",\"value\":1617},{\"key\":\"2000-08-15\",\"value\":1617},{\"key\":\"2000-08-24\",\"value\":1617},{\"key\":\"2000-08-17\",\"value\":1617},{\"key\":\"2000-08-18\",\"value\":1617},{\"key\":\"2000-08-23\",\"value\":1617},{\"key\":\"2000-08-25\",\"value\":1617},{\"key\":\"2000-08-10\",\"value\":1616},{\"key\":\"2000-08-11\",\"value\":1616},{\"key\":\"2000-08-14\",\"value\":1616},{\"key\":\"2000-08-08\",\"value\":1615},{\"key\":\"2000-08-04\",\"value\":1615},{\"key\":\"2000-08-03\",\"value\":1615},{\"key\":\"2000-08-07\",\"value\":1615},{\"key\":\"2000-08-09\",\"value\":1614},{\"key\":\"2000-08-02\",\"value\":1614},{\"key\":\"2000-07-31\",\"value\":1612},{\"key\":\"2000-08-01\",\"value\":1612},{\"key\":\"2000-07-28\",\"value\":1611},{\"key\":\"2000-07-21\",\"value\":1606},{\"key\":\"2000-07-27\",\"value\":1606},{\"key\":\"2000-07-24\",\"value\":1606},{\"key\":\"2000-07-25\",\"value\":1606},{\"key\":\"2000-07-26\",\"value\":1606},{\"key\":\"2000-07-19\",\"value\":1605},{\"key\":\"2000-07-18\",\"value\":1605},{\"key\":\"2000-07-14\",\"value\":1605},{\"key\":\"2000-07-17\",\"value\":1605},{\"key\":\"2000-07-13\",\"value\":1603},{\"key\":\"2000-07-11\",\"value\":1603},{\"key\":\"2000-07-10\",\"value\":1603},{\"key\":\"2000-07-03\",\"value\":1602},{\"key\":\"2000-07-07\",\"value\":1602},{\"key\":\"2000-06-30\",\"value\":1602},{\"key\":\"2000-07-05\",\"value\":1602},{\"key\":\"2000-07-06\",\"value\":1602},{\"key\":\"2000-06-29\",\"value\":1601},{\"key\":\"2000-06-28\",\"value\":1600},{\"key\":\"2000-06-27\",\"value\":1599},{\"key\":\"2000-07-12\",\"value\":1599},{\"key\":\"2000-06-26\",\"value\":1598},{\"key\":\"2000-06-23\",\"value\":1597},{\"key\":\"2000-07-20\",\"value\":1597},{\"key\":\"2000-06-21\",\"value\":1568},{\"key\":\"2000-06-22\",\"value\":1568},{\"key\":\"2000-06-20\",\"value\":1568},{\"key\":\"2000-04-06\",\"value\":1566},{\"key\":\"2000-06-19\",\"value\":1566},{\"key\":\"2000-04-07\",\"value\":1566},{\"key\":\"2000-03-31\",\"value\":1565},{\"key\":\"2000-04-11\",\"value\":1565},{\"key\":\"2000-04-04\",\"value\":1565},{\"key\":\"2000-06-16\",\"value\":1565},{\"key\":\"2000-04-12\",\"value\":1565},{\"key\":\"2000-04-05\",\"value\":1565},{\"key\":\"2000-03-28\",\"value\":1565},{\"key\":\"2000-04-03\",\"value\":1565},{\"key\":\"2000-03-30\",\"value\":1565},{\"key\":\"2000-04-10\",\"value\":1565},{\"key\":\"2000-03-29\",\"value\":1565},{\"key\":\"2000-03-27\",\"value\":1565},{\"key\":\"2000-04-17\",\"value\":1564},{\"key\":\"2000-04-13\",\"value\":1564},{\"key\":\"2000-04-19\",\"value\":1564},{\"key\":\"2000-04-14\",\"value\":1564},{\"key\":\"2000-04-18\",\"value\":1564},{\"key\":\"2000-04-20\",\"value\":1563},{\"key\":\"2000-02-28\",\"value\":1562},{\"key\":\"2000-04-26\",\"value\":1562},{\"key\":\"2000-04-27\",\"value\":1562},{\"key\":\"2000-05-26\",\"value\":1562},{\"key\":\"2000-05-01\",\"value\":1562},{\"key\":\"2000-06-13\",\"value\":1562},{\"key\":\"2000-04-24\",\"value\":1562},{\"key\":\"2000-06-14\",\"value\":1562},{\"key\":\"2000-04-28\",\"value\":1562},{\"key\":\"2000-04-25\",\"value\":1562},{\"key\":\"2000-06-12\",\"value\":1562},{\"key\":\"2000-06-15\",\"value\":1562},{\"key\":\"2000-06-05\",\"value\":1561},{\"key\":\"2000-03-23\",\"value\":1561},{\"key\":\"2000-03-10\",\"value\":1561},{\"key\":\"2000-06-08\",\"value\":1561},{\"key\":\"2000-06-01\",\"value\":1561},{\"key\":\"2000-05-30\",\"value\":1561},{\"key\":\"2000-05-31\",\"value\":1561},{\"key\":\"2000-06-07\",\"value\":1561},{\"key\":\"2000-03-09\",\"value\":1561},{\"key\":\"2000-06-06\",\"value\":1561},{\"key\":\"2000-03-24\",\"value\":1561},{\"key\":\"2000-05-17\",\"value\":1560},{\"key\":\"2000-05-02\",\"value\":1560},{\"key\":\"2000-05-15\",\"value\":1560},{\"key\":\"2000-05-12\",\"value\":1560},{\"key\":\"2000-05-16\",\"value\":1560},{\"key\":\"2000-02-22\",\"value\":1560},{\"key\":\"2000-05-19\",\"value\":1560},{\"key\":\"2000-03-14\",\"value\":1560},{\"key\":\"2000-03-02\",\"value\":1560},{\"key\":\"2000-03-06\",\"value\":1560},{\"key\":\"2000-05-22\",\"value\":1559},{\"key\":\"2000-05-11\",\"value\":1559},{\"key\":\"2000-05-10\",\"value\":1559},{\"key\":\"2000-02-16\",\"value\":1559},{\"key\":\"2000-05-18\",\"value\":1559},{\"key\":\"2000-03-22\",\"value\":1559},{\"key\":\"2000-03-13\",\"value\":1559},{\"key\":\"2000-05-08\",\"value\":1558},{\"key\":\"2000-02-25\",\"value\":1558},{\"key\":\"2000-02-02\",\"value\":1558},{\"key\":\"2000-05-03\",\"value\":1558},{\"key\":\"2000-03-03\",\"value\":1558},{\"key\":\"2000-05-09\",\"value\":1558},{\"key\":\"2000-02-04\",\"value\":1558},{\"key\":\"2000-02-24\",\"value\":1558},{\"key\":\"2000-05-05\",\"value\":1558},{\"key\":\"2000-02-01\",\"value\":1558},{\"key\":\"2000-05-04\",\"value\":1558},{\"key\":\"2000-03-07\",\"value\":1558},{\"key\":\"2000-01-31\",\"value\":1558},{\"key\":\"2000-02-10\",\"value\":1558},{\"key\":\"2000-02-15\",\"value\":1558},{\"key\":\"2000-02-03\",\"value\":1557},{\"key\":\"2000-02-29\",\"value\":1557},{\"key\":\"2000-05-23\",\"value\":1557},{\"key\":\"2000-03-16\",\"value\":1557},{\"key\":\"2000-03-21\",\"value\":1557},{\"key\":\"2000-02-18\",\"value\":1557},{\"key\":\"2000-03-08\",\"value\":1557},{\"key\":\"2000-05-24\",\"value\":1557},{\"key\":\"2000-03-17\",\"value\":1556},{\"key\":\"2000-02-07\",\"value\":1556},{\"key\":\"2000-01-27\",\"value\":1556},{\"key\":\"2000-01-24\",\"value\":1556},{\"key\":\"2000-05-25\",\"value\":1556},{\"key\":\"2000-02-08\",\"value\":1556},{\"key\":\"2000-02-14\",\"value\":1555},{\"key\":\"2000-01-28\",\"value\":1555},{\"key\":\"2000-03-15\",\"value\":1555},{\"key\":\"2000-03-20\",\"value\":1555},{\"key\":\"2000-01-25\",\"value\":1555},{\"key\":\"2000-01-20\",\"value\":1554},{\"key\":\"2000-02-11\",\"value\":1554},{\"key\":\"2000-01-04\",\"value\":1554},{\"key\":\"2000-01-21\",\"value\":1554},{\"key\":\"2000-02-09\",\"value\":1554},{\"key\":\"2000-01-11\",\"value\":1554},{\"key\":\"2000-01-10\",\"value\":1554},{\"key\":\"2000-01-05\",\"value\":1553},{\"key\":\"2000-01-26\",\"value\":1553},{\"key\":\"2000-01-06\",\"value\":1553},{\"key\":\"2000-02-17\",\"value\":1553},{\"key\":\"2000-01-13\",\"value\":1553},{\"key\":\"2000-01-03\",\"value\":1553},{\"key\":\"2000-01-12\",\"value\":1552},{\"key\":\"2000-01-19\",\"value\":1552},{\"key\":\"2000-01-18\",\"value\":1552},{\"key\":\"2000-01-07\",\"value\":1551},{\"key\":\"2000-01-14\",\"value\":1550},{\"key\":\"2000-03-01\",\"value\":1507},{\"key\":\"2000-06-09\",\"value\":602},{\"key\":\"2000-08-29\",\"value\":544},{\"key\":\"2000-08-28\",\"value\":543},{\"key\":\"2000-06-02\",\"value\":529},{\"key\":\"2000-02-23\",\"value\":516},{\"key\":\"2000-07-04\",\"value\":1},{\"key\":\"2001-09-11\",\"value\":1},{\"key\":\"2001-04-13\",\"value\":1},{\"key\":\"2001-02-19\",\"value\":1},{\"key\":\"2000-04-21\",\"value\":1},{\"key\":\"2001-05-28\",\"value\":1},{\"key\":\"2001-12-25\",\"value\":1},{\"key\":\"2000-11-23\",\"value\":1},{\"key\":\"2001-11-22\",\"value\":1},{\"key\":\"2000-09-04\",\"value\":1},{\"key\":\"2000-05-29\",\"value\":1},{\"key\":\"2001-01-01\",\"value\":1},{\"key\":\"2001-07-04\",\"value\":1},{\"key\":\"2001-09-14\",\"value\":1},{\"key\":\"2001-09-13\",\"value\":1},{\"key\":\"2001-01-15\",\"value\":1},{\"key\":\"2000-12-25\",\"value\":1},{\"key\":\"2001-09-03\",\"value\":1},{\"key\":\"2001-09-12\",\"value\":1}]"
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 13776
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 11623.0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 27.393651649549202
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 22270737.460915357
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_open", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.00 to 1162.30\",\"low\":\"0.00\",\"idx\":0,\"value\":812980,\"high\":\"1162.30\"},{\"key\":\"1162.30 to 2324.60\",\"low\":\"1162.30\",\"idx\":1,\"value\":0,\"high\":\"2324.60\"},{\"key\":\"2324.60 to 3486.90\",\"low\":\"2324.60\",\"idx\":2,\"value\":0,\"high\":\"3486.90\"},{\"key\":\"3486.90 to 4649.20\",\"low\":\"3486.90\",\"idx\":3,\"value\":0,\"high\":\"4649.20\"},{\"key\":\"4649.20 to 5811.50\",\"low\":\"4649.20\",\"idx\":4,\"value\":8,\"high\":\"5811.50\"},{\"key\":\"5811.50 to 6973.80\",\"low\":\"5811.50\",\"idx\":5,\"value\":0,\"high\":\"6973.80\"},{\"key\":\"6973.80 to 8136.10\",\"low\":\"6973.80\",\"idx\":6,\"value\":0,\"high\":\"8136.10\"},{\"key\":\"8136.10 to 9298.40\",\"low\":\"8136.10\",\"idx\":7,\"value\":0,\"high\":\"9298.40\"},{\"key\":\"9298.40 to 10460.70\",\"low\":\"9298.40\",\"idx\":8,\"value\":0,\"high\":\"10460.70\"},{\"key\":\"10460.70 to 11623.00\",\"low\":\"10460.70\",\"idx\":9,\"value\":1,\"high\":\"11623.00\"}]"
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "numrows", 
+        "table": "test_nyse_stocks", 
+        "value": 812989
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "distincts", 
+        "table": "test_nyse_stocks", 
+        "value": 14826
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "nulls", 
+        "table": "test_nyse_stocks", 
+        "value": 0
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "max", 
+        "table": "test_nyse_stocks", 
+        "value": 632.760009765625
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "min", 
+        "table": "test_nyse_stocks", 
+        "value": 0.14000000059604645
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "mean", 
+        "table": "test_nyse_stocks", 
+        "value": 27.44968833745769
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "sum", 
+        "table": "test_nyse_stocks", 
+        "value": 22316294.671781391
+    }, 
+    {
+        "dataType": "float", 
+        "database": "default", 
+        "field": "stock_price_close", 
+        "profileKind": "decilefreq", 
+        "table": "test_nyse_stocks", 
+        "value": "[{\"key\":\"0.14 to 63.40\",\"low\":\"0.14\",\"idx\":0,\"value\":760971,\"high\":\"63.40\"},{\"key\":\"63.40 to 126.66\",\"low\":\"63.40\",\"idx\":1,\"value\":45238,\"high\":\"126.66\"},{\"key\":\"126.66 to 189.93\",\"low\":\"126.66\",\"idx\":2,\"value\":4312,\"high\":\"189.93\"},{\"key\":\"189.93 to 253.19\",\"low\":\"189.93\",\"idx\":3,\"value\":812,\"high\":\"253.19\"},{\"key\":\"253.19 to 316.45\",\"low\":\"253.19\",\"idx\":4,\"value\":502,\"high\":\"316.45\"},{\"key\":\"316.45 to 379.71\",\"low\":\"316.45\",\"idx\":5,\"value\":234,\"high\":\"379.71\"},{\"key\":\"379.71 to 442.97\",\"low\":\"379.71\",\"idx\":6,\"value\":151,\"high\":\"442.97\"},{\"key\":\"442.97 to 506.24\",\"low\":\"442.97\",\"idx\":7,\"value\":354,\"high\":\"506.24\"},{\"key\":\"506.24 to 569.50\",\"low\":\"506.24\",\"idx\":8,\"value\":235,\"high\":\"569.50\"},{\"key\":\"569.50 to 632.76\",\"low\":\"569.50\",\"idx\":9,\"value\":180,\"high\":\"632.76\"}]"
+    }
+]

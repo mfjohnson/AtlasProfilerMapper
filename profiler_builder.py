@@ -3,6 +3,10 @@ import pandas as pd
 import numpy as np
 from ATLASAPI import *
 import sys, getopt
+import logging
+
+logging.basicConfig(filename="AtlasDataProfilerBridge.log", level=logging.DEBUG)
+
 
 #------ UTILITY METHODS
 def extractArguments():
@@ -28,6 +32,7 @@ def extractArguments():
             output_file = a
 
     json_data = input_file.read()
+    logging.debug(json_data)
     df = pd.read_json(json_data)
     return(df, output_file)
 
@@ -57,7 +62,7 @@ def prepare_table_profile_stats(tableFQDN, stats, outputfile):
     """
     global table_properties
 
-    print(stats)
+    logging.debug(stats)
     numRows = stats['numrows'].iloc[0]
 
 
@@ -82,6 +87,7 @@ def prepare_table_profile_stats(tableFQDN, stats, outputfile):
         "traits": {
         }
     }
+    logging.debug(json.dumps(table_properties, indent=4, sort_keys=True))
     if not outputfile:
         tableResult = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_table&property=qualifiedName&value=%s" % (tableFQDN),
@@ -112,9 +118,8 @@ def convertJSONSet(jsonObject):
     return(strJSONList)
 
 
-# TODO Finish implementing the Annual frequency
 def buildAnnualFrequencyData(annual, monthly):
-    print("Builder")
+
     distrAnnualList = []
     if monthly:
         monthlyList = pd.DataFrame(json.loads(monthly))
@@ -209,11 +214,13 @@ def prepareColumnProfileStats(colStats, outputfile):
             "traits": {
             }
         }
-
+        logging.debug(json.dumps(column_properties, indent=4, sort_keys=True))
         result = atlasPOST(
             "/api/atlas/entities/qualifiedName?type=hive_column&property=qualifiedName&value=%s" % (colFQDN),
             column_properties)
-        print json.dumps(result, indent=2, sort_keys=True)
+
+        logging.info("Posted column: {0}".format(colFQDN))
+        logging.debug(json.dumps(result, indent=2, sort_keys=True))
         columnProfile.append(column_properties)
         if outputfile:
             with open("{0}Column.json".format(colFQDN), 'w') as fp:
