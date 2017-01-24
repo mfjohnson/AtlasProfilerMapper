@@ -209,7 +209,7 @@ def prepareColumnProfileStats(colStats, outputfile):
                         "maxLength": convertNumDictValue(colDef['max_length'],"Num"),
                         "cardinality": convertNumDictValue(colDef['distincts'],"Num"),
  #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
-                        "nonNullData": (1-(convertNumDictValue(colDef['nulls'],"Num")/convertNumDictValue(colDef['numrows'],"Num"))*100),
+                        "nonNullData": ((1-(convertNumDictValue(colDef['nulls'],"Num")/convertNumDictValue(colDef['numrows'],"Num")))*100),
                         "distributionType": distributionType,
                         "distributionData": distributionData
                     }
