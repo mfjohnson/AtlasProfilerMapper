@@ -3,7 +3,7 @@
 # Bridge Requirements
  * Python 2.7
  * HDP 2.5.0 or 2.5.3
- * pandas 0.18
+ * pandas 0.18 (also verified pandas (0.16.2))
  * numpy 1.11.1
  * Mosaic Profile Generator
  

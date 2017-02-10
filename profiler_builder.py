@@ -171,8 +171,16 @@ def mapDistributionObjects(colDef, dataType):
 def convertNumDictValue(colValue, type):
     result = None
     if (type=='Num'):
+        logging.info("Column Value = {0} on type {1}".format(colValue,type))
         result = colValue if colValue and pd.notnull(colValue) else 0
     return(result)
+
+
+def checkColumnExistsAndThenConvert(dataType, colStats, colDef):
+    if dataType in colStats.columns:
+        return convertNumDictValue(colDef[dataType], "Num")
+    else:
+        return None
 
 def prepareColumnProfileStats(colStats, outputfile):
     """
@@ -201,15 +209,19 @@ def prepareColumnProfileStats(colStats, outputfile):
                     "jsonClass": "org.apache.atlas.typesystem.json.InstanceSerialization$_Struct",
                     "typeName": "hive_column_profile_data",
                     "values": {
-                        "maxValue": convertNumDictValue(colDef['max'],"Num"),
-                        "minValue": convertNumDictValue(colDef['min'],"Num"),
-                        "meanValue": convertNumDictValue(colDef['mean'],"Num"),
-#                       "sumValue": convertNumDictValue(colDef['sum'],"Num"),
-                        "averageLength": convertNumDictValue(colDef['avg_length'],"Num"),
-                        "maxLength": convertNumDictValue(colDef['max_length'],"Num"),
-                        "cardinality": convertNumDictValue(colDef['distincts'],"Num"),
- #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
-                        "nonNullData": ((1-(convertNumDictValue(colDef['nulls'],"Num")/convertNumDictValue(colDef['numrows'],"Num")))*100),
+                        "maxValue": checkColumnExistsAndThenConvert('max', colStats, colDef),
+                        "minValue": checkColumnExistsAndThenConvert('min', colStats, colDef),
+                        "meanValue": checkColumnExistsAndThenConvert('mean', colStats, colDef),
+                        #                       "sumValue": convertNumDictValue(colDef['sum'],"Num"),
+                        "averageLength": checkColumnExistsAndThenConvert('avg_length', colStats, colDef),
+                        "maxLength": checkColumnExistsAndThenConvert('max_length', colStats, colDef),
+                        "cardinality": checkColumnExistsAndThenConvert('distincts', colStats, colDef),
+
+                        #                      "empties": convertNumDictValue(colDef['empties'],"Num"),
+                        "nonNullData": ((1 - (
+                        checkColumnExistsAndThenConvert('nulls', colStats, colDef) / checkColumnExistsAndThenConvert(
+                            'numrows', colStats, colDef))) * 100),
+
                         "distributionType": distributionType,
                         "distributionData": distributionData
                     }
